@@ -1,0 +1,3 @@
+[submodule "members-icons"]
+	path = members-icons
+	url = git@github.com:bencentra/members-icons.git

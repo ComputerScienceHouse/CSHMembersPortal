@@ -7,11 +7,10 @@
   <meta name="viewport" content="width=device-width" />
   <title>CSH Members Portal</title>
 
-  
   <link rel="stylesheet" href="css/foundation.css" />
-  <link rel="stylesheet" type="text/css" href="css/flat-ui.css">
+  <!--<link rel="stylesheet" type="text/css" href="css/flat-ui.css">-->
   <link rel="stylesheet" href="css/custom.css"/>
-
+  <link rel="stylesheet" href="members-icons/css/members_icons_144.css"/>
 
   <script type="text/js" src="js/vendor/custom.modernizr.js"></script>
   <script type="text/js" src="js/toWord.js"></script>
@@ -52,65 +51,139 @@
 			<div class="hide-for-small">
 				<div class="row panel" id="info">
 					<h4>Info</h4>
-					<ul class="no-bullet">
-						<li><a href="https://wiki.csh.rit.edu/">Wiki</a></li>
-						<li><a href="https://members.csh.rit.edu/profiles/">Member Profiles</a></li>
-						<li><a href="http://tinyurl.com/cshcalendar">Event Calendar</a>
-							 (<a href="http://www.google.com/calendar/ical/rti648k5hv7j3ae3a3rum8potk%40group.calendar.google.com/public/basic">XML</a>, <a href="http://www.google.com/calendar/ical/rti648k5hv7j3ae3a3rum8potk%40group.calendar.google.com/public/basic.ics">iCal</a>)
-						</li>
-						<li><a href="https://map.csh.rit.edu/">Floor Map</a> 
-							(<a href="https://wiki.csh.rit.edu/wiki/Floor_Map">wiki doc</a>)</li>
-						<li><a href="resources/CSHconstitution.pdf">Constitution</a></li>
+					<a href="https://wiki.csh.rit.edu/" class="icon-box">
+						<div class="icon icon-wiki"></div>
+						<p>Wiki</p>
+					</a>
+					<a href="https://members.csh.rit.edu/profiles/" class="icon-box">
+						<div class="icon icon-profiles"></div>
+						<p>Member Profiles</p>
+					</a>
+					<a href="#" class="icon-box" data-dropdown="calendar-dropdown">
+						<div class="icon icon-events"></div>
+						<p>Event<br/>Calendar</p>
+					</a>
+					<ul id="calendar-dropdown" class="f-dropdown" data-dropdown-content>
+						<li><a href="http://tinyurl.com/cshcalendar">Calendar</a></li>
+						<li><a href="http://www.google.com/calendar/ical/rti648k5hv7j3ae3a3rum8potk%40group.calendar.google.com/public/basic">XML</a></li>
+						<li><a href="http://www.google.com/calendar/ical/rti648k5hv7j3ae3a3rum8potk%40group.calendar.google.com/public/basic.ics">iCal</a></li>
 					</ul>
+					<a href="https://map.csh.rit.edu/" class="icon-box">
+						<div class="icon icon-floormap"></div>
+						<p>Floor Map</p>
+					</a>
+					<a href="resources/CSHconstitution.pdf" class="icon-box">
+						<div class="icon icon-constitution"></div>
+						<p>Constitution</p>
+					</a>
 				</div>
 							
 				<div class="row panel" id="media">
 					<h4>Media</h4>
-					<ul class="no-bullet">
-						<li><a href="https://gallery.csh.rit.edu/main.php">Media Gallery</a></li>
-						<li><a href="https://segfault.csh.rit.edu/">Segfault Archive</a></li>
-						<li><a href="https://members.csh.rit.edu/bash/">Quotes Database</a></li>
-					</ul>
-					<ul class="no-bullet">
-						<!-- I'd argue that these are (or should be) on gallery, and therefore irrelevant links -->
-						<li><a href="https://members.csh.rit.edu/randpics.1/">1993-99 Random Pictures</a></li>
+					<a href="https://gallery.csh.rit.edu/main.php" class="icon-box">
+						<div class="icon icon-gallery"></div>
+						<p>Gallery</p>
+					</a>
+					<a href="https://segfault.csh.rit.edu/" class="icon-box">
+						<div class="icon icon-segfault"></div>
+						<p>Segfault Archive</p>
+					</a>
+					<a href="https://members.csh.rit.edu/bash/" class="icon-box">
+						<div class="icon icon-quotes"></div>
+						<p>Quotes Database</p>
+					</a>
+					<a href="#" class="icon-box" data-dropdown="pictures-dropdown">
+						<div class="icon icon-pictures"></div>
+						<p>Old Pictures</p>
+					</a>
+					<ul id="pictures-dropdown" class="f-dropdown" data-dropdown-content>
+						<li><a href="https://members.csh.rit.edu/randpics.1/">Random Pics '93-'99</a></li>
 						<li><a href="https://members.csh.rit.edu/ybook2003/">Yearbook 2003</a></li>
 						<li><a href="https://members.csh.rit.edu/yearbook/2002/">Yearbook 2002</a></li>
-						<li><a href="https://members.csh.rit.edu/photohunt/">Photohunt</a></li>
+						<li><a href="https://members.csh.rit.edu/photohunt/">Photohunt '01-'03</a></li>
 					</ul>
+					<br class="clear"/>
 				</div>
 							
 				<div class="row panel" id="services">
 					<h4>Services</h4>
-					<ul class="no-bullet">
-						<li><a href="http://schedule.csh.rit.edu/">Schedule Maker</a></li>
-						<li><a href="https://webnews.csh.rit.edu/">WebNews</a>
-							(<a href="https://wiki.csh.rit.edu/wiki/News">Newsgroups</a>)</li>
-						<li><a href="https://drink.csh.rit.edu">Drink</a></li>
-						<li><a href="https://roundcube.csh.rit.edu/">Roundcube Webmail</a></li>
-						<li><a href="http://lists.csh.rit.edu/">Mailing Lists</a></li>
-						<li><a href="https://eval.csh.rit.edu/">Eval Database</a></li>
-						<li><a href="https://bookkake.csh.rit.edu/">Bookkake</a> (Book exchange)</li>
-						<li><a href="https://wiki.csh.rit.edu/wiki/User_services_machine">User Machines</a></li>
-						<li><a href="http://e5.onthehub.com/d.ashx?s=nkh8poy6f2">Microsoft Dreamspark</a>
-							(<a href="https://e5.onthehub.com/Admin/Security/Signin.aspx?rurl=%2fadmin%2fDefault.aspx">Admin</a>)</li>
-						 <li><a href="https://members.csh.rit.edu/~mcg1sean/food/">Chinese Food Portal</a></li>
-						 <li><a href="./c-yank/">C-Yank Webcomic Aggregator</a></li>
+					<a href="http://schedule.csh.rit.edu/" class="icon-box">
+						<div class="icon icon-schedule"></div>
+						<p>Schedule Maker</p>
+					</a>
+					<a href="https://drink.csh.rit.edu" class="icon-box">
+						<div class="icon icon-drink"></div>
+						<p>Drink</p>
+					</a>
+					<a href="http://webnews.csh.rit.edu/" class="icon-box">
+						<div class="icon icon-webnews"></div>
+						<p>WebNews</p>
+					</a>
+					<a href="https://roundcube.csh.rit.edu" class="icon-box">
+						<div class="icon icon-webmail"></div>
+						<p>Roundcube Webmail</p>
+					</a>
+					<a href="https://lists.csh.rit.edu" class="icon-box">
+						<div class="icon icon-lists"></div>
+						<p>Mailing Lists</p>
+					</a>
+					<a href="https://eval.csh.rit.edu" class="icon-box">
+						<div class="icon icon-evals"></div>
+						<p>Eval Database</p>
+					</a>
+					<a href="https://bookkake.csh.rit.edu" class="icon-box">
+						<div class="icon icon-bookkake"></div>
+						<p>Bookkake</p>
+					</a>
+					<a href="https://wiki.csh.rit.edu/wiki/User_services_machine" class="icon-box">
+						<div class="icon icon-machines"></div>
+						<p>User Machines</p>
+					</a>
+					<a href="#" class="icon-box" data-dropdown="dreamspark-dropdown">
+						<div class="icon icon-microsoft"></div>
+						<p>Microsoft DreamSpark</p>
+					</a>
+					<ul id="dreamspark-dropdown" class="f-dropdown" data-dropdown-content>
+						<li><a href="http://e5.onthehub.com/d.ashx?s=nkh8poy6f2">DreamSpark</a></li>
+						<li><a href="https://e5.onthehub.com/Admin/Security/Signin.aspx?rurl=%2fadmin%2fDefault.aspx">Admin</a></li>
 					</ul>
+					<a href="https://members.csh.rit.edu/~mcg1sean/food/" class="icon-box">
+						<div class="icon icon-food"></div>
+						<p>Chinese Food Portal</p>
+					</a>
+					
+					<a href="./c-yank/" class="icon-box">
+						<div class="icon icon-webcomic"></div>
+						<p>Webcomic Aggregator</p>
+					</a>
 				</div>
 							
 				<div class="row panel" id="sysadmin">
 					<h4>Sys Admin</h4>
-					<ul class="no-bullet">
-						 <li><a href="resources/CA_Certificate.crt">CA Certificate</a>
-						 <li><a href="http://starrs.csh.rit.edu">STARRS</a>(manage network registrations)</li>
-						 <li><a href="./phpldapadmin/">LDAP Admin</a></li>
-						 <li><a href="./phpmyadmin/">MySQL Admin</a></li>
-						 <li><a href="./phpPgAdmin/">PostgreSQL Admin</a></li>
-						<!-- <li><a href="http://chiclets.csh.rit.edu/xmc">VM Management</a></li> -->
-						<!-- <li><a href="http://start.csh.rit.edu/bandwidth">Bandwidth Monitoring</a></li> -->
-						 <li><a href="https://members.csh.rit.edu/~devurandom/NetworkStats/index.php">Network Information</a></li>
-					</ul>
+					<a href="resources/CA_Certificate.crt" class="icon-box">
+						<div class="icon icon-certificate"></div>
+						<p>CA Certificate</p>
+					</a>
+					<a href="http://starrs.csh.rit.edu" class="icon-box">
+						<div class="icon icon-starrs"></div>
+						<p>STARRS</p>
+					</a>
+					<a href="./phpldapadmin/" class="icon-box">
+						<div class="icon icon-ldap"></div>
+						<p>LDAP Admin</p>
+					</a>
+					<a href="./phpmyadmin/" class="icon-box">
+						<div class="icon icon-mysql"></div>
+						<p>MySQL Admin</p>
+					</a>
+					<a href="./phpPgAdmin/" class="icon-box">
+						<div class="icon icon-postgresql"></div>
+						<p>PostgreSQL Admin</p>
+					</a>
+					<a href="https://members.csh.rit.edu/~devurandom/NetworkStats/index.php" class="icon-box">
+						<div class="icon icon-network"></div>
+						<p>Network Info</p>
+					</a>
 				</div>
 							
 				<div class="row panel" id="docs and misc">
@@ -285,7 +358,7 @@
 	  
 	  <script src="js/foundation/foundation.cookie.js"></script>
 	  
-	  <script src="js/foundation/foundation.dropdown.js"></script>
+	  --><script src="js/foundation/foundation.dropdown.js"></script><!--
 	  
 	  <script src="js/foundation/foundation.forms.js"></script>
 	  
@@ -302,10 +375,9 @@
 	  <script src="js/foundation/foundation.section.js"></script>
 	  
 	  <script src="js/foundation/foundation.tooltips.js"></script>
+
 	  -->
 	  <script src="js/foundation/foundation.topbar.js"></script>
-	  
-	  
 	  
   <script>
     $(document).foundation();

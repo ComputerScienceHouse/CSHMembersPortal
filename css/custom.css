@@ -41,6 +41,7 @@ html, body {
 .panel {
   background-color: white;
   border-color: white;
+  padding: 20px;
 }
 
 #main {
@@ -52,6 +53,10 @@ html, body {
 }
 .button:hover{
   background-color:#498211;
+}
+
+.f-dropdown {
+  padding: 5px;
 }
 
 /*******************/
@@ -80,6 +85,45 @@ h2 {
   margin-left:auto;
   margin-right:auto;
   text-align:center;
+}
+
+/*****ICON BOXES*****/
+.icon-box {
+  float:left; 
+  /*border:1px solid #bbb;*/ 
+  margin: 3px;
+  padding: 3px;
+  min-width: 85px;
+  max-width: 100px;
+  height: 125px;
+  background-color: #fff;
+  text-align: center;
+  color:#5ba215;
+  font-size: 1em;
+}
+
+.icon-box p {
+  color:#5ba215;
+  line-height: 1.25;
+}
+
+.icon-box:hover {
+  background-color: #ddd; 
+  cursor: pointer;
+}
+
+.icon-box:hover p {
+  color:#498211;
+}
+
+.icon {
+  width: 72px;
+  height: 72px;
+  margin:auto;
+}
+
+.clear {
+  clear: both;
 }
 
 /*****FOOTER*****/
