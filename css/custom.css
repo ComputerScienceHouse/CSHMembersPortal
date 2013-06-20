@@ -48,10 +48,14 @@ html, body {
   margin-top: 1%;
 }
 
-.button{
+#menu {
+  margin-bottom: -14px;
+}
+
+.button {
   background-color:#5ba215;
 }
-.button:hover{
+.button:hover {
   background-color:#498211;
 }
 
@@ -124,15 +128,4 @@ h2 {
 
 .clear {
   clear: both;
-}
-
-/*****FOOTER*****/
-#footer {
-  background:#fff;
-  color:#aaa;
-  font-size:90%;
-  text-align:center;
-  padding-top: 1.5%;
-  padding-left: 40%;
-  padding-bottom: 1.5%;
 }
