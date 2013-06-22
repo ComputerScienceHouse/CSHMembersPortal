@@ -46,46 +46,50 @@
 
 	<!-- Main Body -->
 	<div id="main" class="row ">
-
 		<div class="large-9 push-3 columns">
 			<div class="hide-for-small">
-				
+				<div id="view-options" class="button-bar">
+		  			<ul class="button-group">
+					    <li><button class="small button" onclick="saveViewPreference('icon');">Icon View</button></li>
+					    <li><button class="small button" onclick="saveViewPreference('list');">List View</button></li>
+		  			</ul>
+  				</div>
 				<div class="row panel" id="popular">
-					<h4 class="center">Popular</h4>
-					<ul class="small-block-grid-4">
+					<h4>Popular</h4>
+					<ul class="list small-block-grid-4">
 						<li><a href="http://schedule.csh.rit.edu/" class="icon-box">
 							<div class="icon icon-schedule"></div>
-							<p>Schedule Maker</p>
+							Schedule Maker
 						</a></li>
 						<li><a href="https://drink.csh.rit.edu" class="icon-box">
 							<div class="icon icon-drink"></div>
-							<p>Drink</p>
+							Drink
 						</a></li>
 						<li><a href="http://webnews.csh.rit.edu/" class="icon-box">
 							<div class="icon icon-webnews"></div>
-							<p>WebNews</p>
+							WebNews
 						</a></li>
 						<li><a href="https://roundcube.csh.rit.edu" class="icon-box">
 							<div class="icon icon-webmail"></div>
-							<p>Roundcube Webmail</p>
+							Roundcube Webmail
 						</a></li>
 					</ul>
 				</div> 
 
 				<div class="row panel" id="info">
-					<h4 class="center">Info</h4>
-					<ul class="small-block-grid-5">
+					<h4>Info</h4>
+					<ul class="list small-block-grid-5">
 						<li><a href="https://wiki.csh.rit.edu/" class="icon-box">
 							<div class="icon icon-wiki"></div>
-							<p>Wiki</p>
+							Wiki
 						</a></li>
 						<li><a href="https://members.csh.rit.edu/profiles/" class="icon-box">
 							<div class="icon icon-profiles"></div>
-							<p>Member Profiles</p>
+							Member Profiles
 						</a></li>
 						<li><a href="#" class="icon-box" data-dropdown="calendar-dropdown">
 							<div class="icon icon-events"></div>
-							<p>Event<br/>Calendar</p>
+							Event Calendar
 						</a>
 							<ul id="calendar-dropdown" class="f-dropdown" data-dropdown-content>
 							<li><a href="http://tinyurl.com/cshcalendar">Calendar</a></li>
@@ -94,82 +98,81 @@
 						</ul></li>
 						<li><a href="https://map.csh.rit.edu/" class="icon-box">
 							<div class="icon icon-floormap"></div>
-							<p>Floor Map</p>
+							Floor Map
 						</a></li>
 						<li><a href="resources/CSHconstitution.pdf" class="icon-box">
 							<div class="icon icon-constitution"></div>
-							<p>Constitution</p>
+							Constitution
 						</a></li>
-				</ul>
+					</ul>
 				</div>
 				
 				<div class="row panel" id="media">
-					<h4 class="center">Media</h4>
-					<ul class="small-block-grid-4">
+					<h4>Media</h4>
+					<ul class="list small-block-grid-4">
 						<li><a href="https://gallery.csh.rit.edu/main.php" class="icon-box">
 							<div class="icon icon-gallery"></div>
-							<p>Gallery</p>
+							Gallery
 						</a></li>
 						<li><a href="https://segfault.csh.rit.edu/" class="icon-box">
 							<div class="icon icon-segfault"></div>
-							<p>Segfault Archive</p>
+							Segfault Archive
 						</a></li>
 						<li><a href="https://members.csh.rit.edu/bash/" class="icon-box">
 							<div class="icon icon-quotes"></div>
-							<p>Quotes Database</p>
+							Quotes Database
 						</a></li>
 						<li><a href="#" class="icon-box" data-dropdown="pictures-dropdown">
 							<div class="icon icon-pictures"></div>
-							<p>Old Pictures</p>
+							Old Pictures
 						</a></li>
 						<li><ul id="pictures-dropdown" class="f-dropdown" data-dropdown-content>
 							<li><a href="https://members.csh.rit.edu/randpics.1/">Random Pics '93-'99</a></li>
 							<li><a href="https://members.csh.rit.edu/ybook2003/">Yearbook 2003</a></li>
 							<li><a href="https://members.csh.rit.edu/yearbook/2002/">Yearbook 2002</a></li>
 							<li><a href="https://members.csh.rit.edu/photohunt/">Photohunt '01-'03</a></li>
-						</ul>
-						</li>
+						</ul></li>
 					</ul>
 				</div>
 							
 				<div class="row panel" id="services">
-					<h4 class="center">Services</h4>
-						<ul class="small-block-grid-4">
+					<h4>Services</h4>
+					<ul class="list small-block-grid-4">
 						<li><a href="http://schedule.csh.rit.edu/" class="icon-box">
 							<div class="icon icon-schedule"></div>
-							<p>Schedule Maker</p>
+							Schedule Maker
 						</a></li>
 						<li><a href="https://drink.csh.rit.edu" class="icon-box">
 							<div class="icon icon-drink"></div>
-							<p>Drink</p>
+							Drink
 						</a></li>
 						<li><a href="http://webnews.csh.rit.edu/" class="icon-box">
 							<div class="icon icon-webnews"></div>
-							<p>WebNews</p>
+							WebNews
 						</a></li>
 						<li><a href="https://roundcube.csh.rit.edu" class="icon-box">
 							<div class="icon icon-webmail"></div>
-							<p>Roundcube Webmail</p>
+							Roundcube Webmail
 						</a></li>
 						<li><a href="https://lists.csh.rit.edu" class="icon-box">
 							<div class="icon icon-lists"></div>
-							<p>Mailing Lists</p>
+							Mailing Lists
 						</a></li>
 						<li><a href="https://eval.csh.rit.edu" class="icon-box">
 							<div class="icon icon-evals"></div>
-							<p>Eval Database</p>
+							Eval Database
 						</a></li>
 						<li><a href="https://bookkake.csh.rit.edu" class="icon-box">
 							<div class="icon icon-bookkake"></div>
-							<p>Bookkake</p>
+							Bookkake
 						</a></li>
 						<li><a href="https://wiki.csh.rit.edu/wiki/User_services_machine" class="icon-box">
 							<div class="icon icon-machines"></div>
-							<p>User Machines</p>
+							User Machines
 						</a></li>
 						<li><a href="#" class="icon-box" data-dropdown="dreamspark-dropdown">
 							<div class="icon icon-microsoft"></div>
-							<p>Microsoft DreamSpark</p>
+							Microsoft DreamSpark
 						</a>
 							<ul id="dreamspark-dropdown" class="f-dropdown" data-dropdown-content>
 							<li><a href="http://e5.onthehub.com/d.ashx?s=nkh8poy6f2">DreamSpark</a></li>
@@ -177,41 +180,41 @@
 						</ul></li>
 						<li><a href="https://members.csh.rit.edu/~mcg1sean/food/" class="icon-box">
 							<div class="icon icon-food"></div>
-							<p>Chinese Food Portal</p>
+							Chinese Food Portal
 						</a></li>
 						<li><a href="./c-yank/" class="icon-box">
 							<div class="icon icon-webcomic"></div>
-							<p>Webcomic Aggregator</p>
+							Webcomic Aggregator
 						</a></li>
 					</ul>
 				</div>
 							
 				<div class="row panel" id="sysadmin">
-					<h4 class="center">Sys Admin</h4>
-					<ul class="small-block-grid-4">
+					<h4>Sys Admin</h4>
+					<ul class="list small-block-grid-4">
 						<li><a href="resources/CA_Certificate.crt" class="icon-box">
 							<div class="icon icon-certificate"></div>
-							<p>CA Certificate</p>
+							CA Certificate
 						</a></li>
 						<li><a href="http://starrs.csh.rit.edu" class="icon-box">
 							<div class="icon icon-starrs"></div>
-							<p>STARRS</p>
+							STARRS
 						</a></li>
 						<li><a href="./phpldapadmin/" class="icon-box">
 							<div class="icon icon-ldap"></div>
-							<p>LDAP Admin</p>
+							LDAP Admin
 						</a></li>
 						<li><a href="./phpmyadmin/" class="icon-box">
 							<div class="icon icon-mysql"></div>
-							<p>MySQL Admin</p>
+							MySQL Admin
 						</a></li>
 						<li><a href="./phpPgAdmin/" class="icon-box">
 							<div class="icon icon-postgresql"></div>
-							<p>PostgreSQL Admin</p>
+							PostgreSQL Admin
 						</a></li>
 						<li><a href="https://members.csh.rit.edu/~devurandom/NetworkStats/index.php" class="icon-box">
 							<div class="icon icon-network"></div>
-							<p>Network Info</p>
+							Network Info
 						</a></li>
 					</ul>
 				</div>
@@ -420,7 +423,49 @@
 
   ga('create', 'UA-41239614-1', 'gambogi.com');
   ga('send', 'pageview');
-
 </script>
+
+<script type="text/javascript">
+	var view = "icon";
+
+  	// Store the user's view preference in localStorage
+  	function saveViewPreference(v) {
+  		view = v;
+  		if (typeof(Storage) !== "undefined") {
+  			localStorage.setItem("view", v);
+  		}
+  		loadView();
+  	}
+
+  	function loadView() {
+  		// If the user wants list view, give them lists!
+  		if (view == "list") {
+  			//$(".list").addClass("no-bullet").removeClass("small-block-grid-4");
+  			$(".list").each(function(){
+  				var oldClass = ($(this).hasClass("small-block-grid-4")) ? "small-block-grid-4" : "small-block-grid-5";
+  				$(this).attr("data-oldclass", oldClass).removeClass(oldClass).addClass("no-bullet");
+  			});
+  			$(".list > li > a").removeClass("icon-box");
+  			$(".icon").attr("style", "display:none;");
+  		}
+  		// If the user wants icons, or hasn't picked a default, give them icons!
+  		else {
+  			//$(".list").removeClass("no-bullet").addClass("small-block-grid-4");
+  			$(".list").each(function(){
+  				var oldClass = $(this).attr("data-oldclass");
+  				$(this).addClass(oldClass).removeClass("no-bullet").attr("data-oldclass", "");
+  			});
+  			$(".list > li > a").addClass("icon-box");
+  			$(".icon").attr("style", "");
+  		}
+  	}
+
+  	// Document ready event listener
+  	document.addEventListener("DOMContentLoaded", function() {
+  		// Load the user's view preference
+  		view = (typeof(Storage) !== "undefined") ? localStorage.getItem("view") : "icon";
+  		if (view == "list") loadView();
+  	}, false);
+  </script>
 </body>
 </html>
