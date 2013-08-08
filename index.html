@@ -48,12 +48,13 @@
 	<div id="main" class="row ">
 		<div class="large-9 push-3 columns">
 			<div class="hide-for-small">
-				<div id="view-options" class="button-bar">
-		  			<ul class="button-group">
-					    <li><button class="small button" onclick="saveViewPreference('icon');">Icon View</button></li>
-					    <li><button class="small button" onclick="saveViewPreference('list');">List View</button></li>
-		  			</ul>
-  				</div>
+                <div id="view-options" class="button-bar">
+                    <ul class="button-group">
+                        <li><button class="small button" onclick="saveViewPreference('icon');">Icon View</button></li>
+                        <li><button class="small button" onclick="saveViewPreference('list');">List View</button></li>
+                    </ul>
+                </div>
+
 				<div class="row panel" id="popular">
 					<h4>Popular</h4>
 					<ul class="list small-block-grid-4">
@@ -74,11 +75,11 @@
 							Roundcube Webmail
 						</a></li>
 					</ul>
-				</div> 
+				</div>
 
 				<div class="row panel" id="info">
 					<h4>Info</h4>
-					<ul class="list small-block-grid-5">
+					<ul class="list small-block-grid-4">
 						<li><a href="https://wiki.csh.rit.edu/" class="icon-box">
 							<div class="icon icon-wiki"></div>
 							Wiki
@@ -189,8 +190,46 @@
 							<div class="icon icon-webcomic"></div>
 							Webcomic Aggregator
 						</a></li>
+                        <li><a href="http://csh.rit.edu/mibbit" class="icon-box">
+                            <div class="icon icon-mibbit"></div>
+                            Mibbit IRC
+                        </a></li>
 					</ul>
 				</div>
+
+                <div class="row panel" id="web">
+                    <h4>CSH On The Web</h4>
+                    <ul class="list small-block-grid-5">
+                        <li><a href="#" class="icon-box" data-dropdown="facebook-dropdown">
+                            <div class="icon icon-facebook"></div>
+                            Facebook
+                        </a>
+                        <ul id="facebook-dropdown" class="f-dropdown" data-dropdown-content>
+                            <li><a href="https://www.facebook.com/groups/ComputerScienceHouse/">Current Members</a></li>
+                            <li><a href="https://www.facebook.com/groups/16764593277/">Alumni Group</a></li>
+                        </ul></li>
+                        <li><a href="#" class="icon-box" data-dropdown="twitter-dropdown">
+                            <div class="icon icon-twitter"></div>
+                            Twitter
+                        </a><ul id="twitter-dropdown" class="f-dropdown" data-dropdown-content>
+                            <li><a href="https://twitter.com/CSH_History">History</a></li>
+                            <li><a href="https://twitter.com/OPCOMM">OpComm</a></li>
+                            <li><a href="https://twitter.com/FUMNCommittee">The Committee</a></li>
+                        </ul></li>
+                        <li><a href="http://www.linkedin.com/groups?gid=971" class="icon-box">
+                            <div class="icon icon-linkedin"></div>
+                            LinkedIn
+                        </a></li>
+                        <li><a href="https://github.com/ComputerScienceHouse" class="icon-box">
+                            <div class="icon icon-github"></div>
+                            GitHub
+                        </a></li>
+                        <li><a href="https://coderwall.com/team/computer-science-house" class="icon-box">
+                            <div class="icon icon-coderwall"></div>
+                            Coderwall
+                        </a></li>
+                    </ul>
+                </div>
 							
 				<div class="row panel" id="sysadmin">
 					<h4>Sys Admin</h4>
