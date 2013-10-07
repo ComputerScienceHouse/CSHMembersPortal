@@ -97,11 +97,45 @@ h2 {
   text-align:center;
 }
 
+#container {
+    background-color: white;
+}
+
+#main-header {
+  padding: 20px;
+  padding-top: 15px;
+  margin-bottom: 15px;
+  background-color: #ddd;
+  border: 1px solid #ddd;
+  box-shadow: 0px 5px #5ba215;
+  height: 63px;
+}
+
+.bottom-line {
+  border-bottom: 5px solid #5ba215;
+}
+
 #view-options {
   float: right;
-  position: relative;
-  top: 20px;
 }
+
+#popular {
+  float: left;
+  width: 60%;
+}
+
+#popular ul li {
+  float: left;
+  display: inline;
+}
+
+#popular ul .popular:hover {
+    background-color: #bbb;
+}
+
+/*#popular ul li h4{
+    color: white;
+}*/
 
 /*****ICON BOXES*****/
 .icon-box {
@@ -137,6 +171,13 @@ h2 {
   width: 72px;
   height: 72px;
   margin:auto;
+}
+
+.icon-small {
+    /*background-image:url('../members-icons/img/members_icons_72_white.png');
+    background-size: 500%;*/
+    width:36px;
+    height:36px;
 }
 
 .clear {

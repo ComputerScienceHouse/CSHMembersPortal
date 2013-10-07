@@ -46,35 +46,24 @@
 
 	<!-- Main Body -->
 	<div id="main" class="row ">
-		<div class="large-9 push-3 columns">
+		<div class="large-9 push-3 columns" id="container">
 			<div class="hide-for-small">
-                <div id="view-options" class="button-bar">
-                    
-                    <button class="small button" onclick="toggleViewPreference();">Switch View</button>
-                </div>
-
-				<div class="row panel" id="popular">
-					<h4>Popular</h4>
-					<ul class="list small-block-grid-4">
-						<li><a href="http://schedule.csh.rit.edu/" class="icon-box">
-							<div class="icon icon-schedule"></div>
-							Schedule Maker
-						</a></li>
-						<li><a href="https://drink.csh.rit.edu" class="icon-box">
-							<div class="icon icon-drink"></div>
-							Drink
-						</a></li>
-						<li><a href="http://webnews.csh.rit.edu/" class="icon-box">
-							<div class="icon icon-webnews"></div>
-							WebNews
-						</a></li>
-						<li><a href="https://roundcube.csh.rit.edu" class="icon-box">
-							<div class="icon icon-webmail"></div>
-							Roundcube Webmail
-						</a></li>
-					</ul>
+				<div class="row panel" id="main-header">
+	                <div id="view-options" class="button-bar">
+	                    <button class="small button" onclick="toggleViewPreference();">Switch View</button>
+	                </div>
+	                <div id="popular">
+	                    <ul>
+	                        <li><h4>Popular:&nbsp;</h4></li>
+	                        <li class="popular"><a href="http://webnews.csh.rit.edu/"><div class="icon icon-small icon-webnews"></div></a></li>
+                            <li class="popular"><a href="https://roundcube.csh.rit.edu"><div class="icon icon-small icon-webmail"></div></a></li>
+                            <li class="popular"><a href="https://wiki.csh.rit.edu/"><div class="icon icon-small icon-wiki"></div></a></li>
+                            <li class="popular"><a href="http://tinyurl.com/cshcalendar"><div class="icon icon-small icon-events"></div></a></li>
+                            <li class="popular"><a href="https://members.csh.rit.edu/profiles"><div class="icon icon-small icon-profiles"></div></a></li>
+                            <li class="popular"><a href="https://drink.csh.rit.edu"><div class="icon icon-small icon-drink"></div></a></li>
+	                    </ul>
+	                </div>
 				</div>
-
 				<div class="row panel" id="info">
 					<h4>Info</h4>
 					<ul class="list small-block-grid-4">
@@ -198,7 +187,7 @@
 
                 <div class="row panel" id="web">
                     <h4>CSH On The Web</h4>
-                    <ul class="list small-block-grid-5">
+                    <ul class="list small-block-grid-4">
                         <li><a href="#" class="icon-box" data-dropdown="facebook-dropdown">
                             <div class="icon icon-facebook"></div>
                             Facebook
@@ -227,6 +216,14 @@
                             <div class="icon icon-coderwall"></div>
                             Coderwall
                         </a></li>
+                        <li><a href="#" class="icon-box" data-dropdown="turntable-dropdown">
+                            <div class="icon icon-turntable"></div>
+                            Turntable
+                        </a>
+                        <ul id="turntable-dropdown" class="f-dropdown" data-dropdown-content>
+                        	<li><a href="http://turntable.fm/csh"/>CSH Room</a></li>
+                        	<li><a href="http://turntable.fm/cshusercenter"/>User Center Room</a></li>
+                        </ul></li>
                     </ul>
                 </div>
 							
@@ -292,8 +289,8 @@
 							<li>
 								<a href="#" data-dropdown="news" class="button medium expand dropdown">News</a><br>
 									<ul id="news" class="f-dropdown">
-									  <li><a class="button medium expand" href="https://webnews.csh.rit.edu/">WebNews</a></li>
-									  <li><a class="button medium expand" href="https://wiki.csh.rit.edu/wiki/News">Newsgroups</a></li>
+									  <li><a href="https://webnews.csh.rit.edu/">WebNews</a></li>
+									  <li><a href="https://wiki.csh.rit.edu/wiki/News">Newsgroups</a></li>
 									</ul>
 							</li>
 							<li><a  class="button medium expand" href="https://roundcube.csh.rit.edu/">Roundcube Webmail</a></li>
@@ -304,14 +301,92 @@
 							<li>
 								<a href="#" data-dropdown="dreamspark" class="button medium expand dropdown">Dreamspark</a><br>
 									<ul id="dreamspark" class="f-dropdown">
-									  <li><a class="button medium expand" href="http://e5.onthehub.com/d.ashx?s=nkh8poy6f2">Microsoft Dreamspark</a></li>
-									  <li><a class="button medium expand" href="https://e5.onthehub.com/Admin/Security/Signin.aspx?rurl=%2fadmin%2fDefault.aspx">Admin</a></li>
+									  <li><a href="http://e5.onthehub.com/d.ashx?s=nkh8poy6f2">Microsoft Dreamspark</a></li>
+									  <li><a href="https://e5.onthehub.com/Admin/Security/Signin.aspx?rurl=%2fadmin%2fDefault.aspx">Admin</a></li>
 									</ul>
 							</li>
 							 <li><a class="button medium expand" href="https://members.csh.rit.edu/~mcg1sean/food/">Chinese Food Portal</a></li>
 							 <li><a class="button medium expand" href="./c-yank/">C-Yank Webcomic Aggregator</a></li>
 						</ul>
 				    </div>
+				  </section>
+				  <section>
+				    <h3 class="title center" data-section-title><a href="#">Information</a></h3>
+				    <div class="content" data-section-content>
+				      	<ul class="no-bullet">
+							<li><a class="button medium expand" href="https://wiki.csh.rit.edu/">Wiki</a></li>
+							<li><a class="button medium expand" href="https://profiles.csh.rit.edu">Member Profiles</a></li>
+							<li>
+								<a href="#" data-dropdown="cal" class="button medium expand dropdown">Calendar</a><br>
+									<ul id="cal" class="f-dropdown">
+
+										<li><a href="http://tinyurl.com/cshcalendar">Event Calendar</a></li>
+										<li><a href="http://www.google.com/calendar/ical/rti648k5hv7j3ae3a3rum8potk%40group.calendar.google.com/public/basic">XML</a></li>
+										 <li><a href="http://www.google.com/calendar/ical/rti648k5hv7j3ae3a3rum8potk%40group.calendar.google.com/public/basic.ics">iCal</a></li>
+									</ul>
+							</li>
+							<li>
+								<a href="#" data-dropdown="map" class="button medium expand dropdown">Map</a><br>
+									<ul id="map" class="f-dropdown">
+									  <li><a href="https://map.csh.rit.edu/">Floor Map</a></li>
+									  <li><a href="https://wiki.csh.rit.edu/wiki/Floor_Map">Wiki Doc</a></li>
+									</ul>
+							</li>
+							<li><a href="resources/CSHconstitution.pdf" class="button medium expand" >Constitution</a></li>
+						</ul>
+				    </div>
+				  </section>
+				  <section>
+				    <h3 class="title center" data-section-title><a href="#">Media</a></h3>
+				    <div class="content" data-section-content>
+				      <ul>
+				      <li><a href="https://gallery.csh.rit.edu/main.php" class="button medium expand">Media Gallery</a></li>
+						<li><a href="https://segfault.csh.rit.edu/" class="button medium expand">Segfault Archive</a></li>
+						<li><a href="https://members.csh.rit.edu/bash/" class="button medium expand">Quotes Database</a></li>
+				      </ul>
+				    </div>
+				  </section>
+				  <section>
+				  	<h3 class="title center" data-section-title><a href="#">CSH On The Web</a></h3>
+				  	<div class="content" data-section-content>
+				  		<ul class="no-bullet">
+				  			<li>
+				  				<a href="#" data-dropdown="facebook" class="button medium expand dropdown">Facebook</a><br/>
+								<ul id="facebook" class="f-dropdown">
+								  	<li><a href="https://www.facebook.com/groups/ComputerScienceHouse/">Current Members</a></li>
+                            		<li><a href="https://www.facebook.com/groups/16764593277/">Alumni Group</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" data-dropdown="twitter" class="button medium expand dropdown">Twitter</a><br/>
+								<ul id="twitter" class="f-dropdown">
+									<li><a href="https://twitter.com/CSH_History">History</a></li>
+	                            	<li><a href="https://twitter.com/OPCOMM">OpComm</a></li>
+	                            	<li><a href="https://twitter.com/FUMNCommittee">The Committee</a></li>
+								</ul>
+							</li>
+							<li><a href="http://www.linkedin.com/groups?gid=971" class="button medium expand">LinkedIn</a></li>
+							<li><a href="https://github.com/ComputerScienceHouse" class="button medium expand">GitHub</a></li>
+							<li><a href="https://coderwall.com/team/computer-science-house" class="button medium expand">Coderwall</a></li>
+							<li>
+								<a href="#" data-dropdown="turntable" class="button medium expand dropdown">Turntable</a><br/>
+								<ul id="turntable" class="f-dropdown">
+									<li><a href="http://turntable.fm/csh"/>CSH Room</a></li>
+	                        		<li><a href="http://turntable.fm/cshusercenter"/>User Center Room</a></li>
+								</ul>
+							</li>
+
+
+	                        <li><a href="#" class="icon-box" data-dropdown="turntable-dropdown">
+	                            <div class="icon icon-turntable"></div>
+	                            Turntable
+	                        </a>
+	                        <ul id="turntable-dropdown" class="f-dropdown" data-dropdown-content>
+	                        	<li><a href="http://turntable.fm/csh"/>CSH Room</a></li>
+	                        	<li><a href="http://turntable.fm/cshusercenter"/>User Center Room</a></li>
+	                        </ul></li>
+				  		</ul>
+				  	</div>
 				  </section>
 				  <section>
 				    <h3 class="title center" data-section-title><a href="#">Sys Admin</a></h3>
@@ -327,49 +402,12 @@
 						</ul>
 				    </div>
 				  </section>
-				  <section>
-				    <h3 class="title center" data-section-title><a href="#">Information</a></h3>
-				    <div class="content" data-section-content>
-				      	<ul class="no-bullet">
-							<li><a class="button medium expand" href="https://wiki.csh.rit.edu/">Wiki</a></li>
-							<li><a class="button medium expand" href="https://profiles.csh.rit.edu">Member Profiles</a></li>
-							<li>
-								<a href="#" data-dropdown="cal" class="button medium expand dropdown">Calendar</a><br>
-									<ul id="cal" class="f-dropdown">
-
-										<li><a class="button medium expand" href="http://tinyurl.com/cshcalendar">Event Calendar</a></li>
-										<li><a class="button medium expand" href="http://www.google.com/calendar/ical/rti648k5hv7j3ae3a3rum8potk%40group.calendar.google.com/public/basic">XML</a></li>
-										 <li><a class="button medium expand" href="http://www.google.com/calendar/ical/rti648k5hv7j3ae3a3rum8potk%40group.calendar.google.com/public/basic.ics">iCal</a></li>
-									</ul>
-							</li>
-							<li>
-								<a href="#" data-dropdown="map" class="button medium expand dropdown">Map</a><br>
-									<ul id="map" class="f-dropdown">
-									  <li><a class="button medium expand" href="https://map.csh.rit.edu/">Floor Map</a></li>
-									  <li><a class="button medium expand" href="https://wiki.csh.rit.edu/wiki/Floor_Map">Wiki Doc</a></li>
-									</ul>
-							</li>
-
-							<li><a href="resources/CSHconstitution.pdf" class="button medium expand" >Constitution</a></li>
-						</ul>
-				    </div>
-				  </section>
-				  <section>
-				    <h3 class="title center" data-section-title><a href="#">Media</a></h3>
-				    <div class="content" data-section-content>
-				      <ul>
-				      <li><a href="https://gallery.csh.rit.edu/main.php" class="button medium expand">Media Gallery</a></li>
-						<li><a href="https://segfault.csh.rit.edu/" class="button medium expand">Segfault Archive</a></li>
-						<li><a href="https://members.csh.rit.edu/bash/" class="button medium expand">Quotes Database</a></li>
-				      </ul>
-				    </div>
-				  </section>
 				</div>
 			</div>
 		</div>
 		<div class="large-3 pull-9 columns">
 			<ul class="pricing-table">
-			  <li class="title">Committee Meeting Times</li>
+			  <li class="title bottom-line">Committee Meeting Times</li>
 			  
 			  <li class="bullet-item ">
 			  		<ul class="small-block-grid-2">
@@ -456,7 +494,7 @@
 	  
 	  <script src="js/foundation/foundation.section.js"></script>
 	  
-	  <script src="js/foundation/foundation.tooltips.js"></script>
+	 --><script src="js/foundation/foundation.tooltips.js"></script><!--
 
 	  -->
 	  <script src="js/foundation/foundation.topbar.js"></script>
@@ -498,7 +536,9 @@
   				$(this).attr("data-oldclass", oldClass).removeClass(oldClass).addClass("no-bullet");
   			});
   			$(".list > li > a").removeClass("icon-box");
-  			$(".icon").attr("style", "display:none;");
+  			$(".icon").filter(function() { 
+				return !$(this).parent().parent().hasClass("popular");
+			}).attr("style", "display:none");
   		}
   		// If the user wants icons, or hasn't picked a default, give them icons!
   		else {
@@ -508,7 +548,9 @@
   				$(this).addClass(oldClass).removeClass("no-bullet").attr("data-oldclass", "");
   			});
   			$(".list > li > a").addClass("icon-box");
-  			$(".icon").attr("style", "");
+  			$(".icon").filter(function() { 
+				return !$(this).parent().parent().hasClass("popular");
+			}).attr("style", "");
   		}
   	}
 
