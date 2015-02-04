@@ -26,7 +26,7 @@
 		      <h1><a href="#"><img src="images/csh.png" alt="CSH Logo"> Member's Portal </a></h1>
 		    </li>
 		    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-		    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>  
+		    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 		</ul>
 
 		  <section class="top-bar-section">
@@ -76,6 +76,7 @@
 							Member Profiles
 						</a></li>
 						<li><a href="https://members.csh.rit.edu/~bencentra/csh-map/" class ="icon-box">
+							<div class="icon icon-world"></div>
 							Global Member Map
 						</a></li>
 						<li><a href="#" class="icon-box" data-dropdown="calendar-dropdown">
@@ -99,13 +100,9 @@
 							<div class="icon icon-spending"></div>
 							Spending
 						</a></li>
-						<li><a href="https://sports.csh.rit.edu" class="icon-box">
-							<div class="icon icon-sports"></div>
-							Sports
-						</a></li>
 					</ul>
 				</div>
-				
+
 				<div class="row panel" id="media">
 					<h4>Media</h4>
 					<ul class="list small-block-grid-4">
@@ -133,7 +130,7 @@
 						</ul></li>
 					</ul>
 				</div>
-							
+
 				<div class="row panel" id="services">
 					<h4>Services</h4>
 					<ul class="list small-block-grid-4">
@@ -160,6 +157,10 @@
 						<li><a href="https://eval.csh.rit.edu" class="icon-box">
 							<div class="icon icon-evals"></div>
 							Eval Database
+						</a></li>
+						<li><a href="https://packet.csh.rit.edu" class="icon-box">
+							<div class="icon icon-packet"></div>
+							Packet
 						</a></li>
 						<li><a href="https://bookkake.csh.rit.edu" class="icon-box">
 							<div class="icon icon-bookkake"></div>
@@ -234,7 +235,7 @@
                         </a></li>
                     </ul>
                 </div>
-							
+
 				<div class="row panel" id="sysadmin">
 					<h4>Sys Admin</h4>
 					<ul class="list small-block-grid-4">
@@ -264,7 +265,7 @@
 						</a></li>
 					</ul>
 				</div>
-							
+
 				<div class="row panel" id="docs_and_misc">
 					<h4>Docs and Misc</h4>
 					<ul class="no-bullet">
@@ -304,9 +305,9 @@
 							<li><a  class="button medium expand" href="https://roundcube.csh.rit.edu/">Roundcube Webmail</a></li>
 							<li><a class="button medium expand" href="http://lists.csh.rit.edu/">Mailing Lists</a></li>
 							<li><a class="button medium expand" href="https://eval.csh.rit.edu/">Eval Database</a></li>
+							<li><a class="button medium expand" href="http://packet.csh.rit.edu/">Packet</a></li>
 							<li><a class="button medium expand" href="https://bookkake.csh.rit.edu/">Bookkake</a></li>
 							<li><a class="button medium expand" href="https://spending.csh.rit.edu/">Spending</a></li>
-							<li><a class="button medium expand" href="https://sports.csh.rit.edu/">Sports</a></li>
 							<li><a class="button medium expand" href="https://wiki.csh.rit.edu/wiki/User_services_machine">User Machines</a></li>
 							<li>
 								<a href="#" data-dropdown="dreamspark" class="button medium expand dropdown">Dreamspark</a><br>
@@ -405,7 +406,7 @@
 		<div class="large-3 pull-9 columns">
 			<ul class="pricing-table">
 			  <li class="title bottom-line">Committee Meeting Times</li>
-			  
+
 			  <li class="bullet-item ">
 			  		<ul class="small-block-grid-2">
 					  	<li><b>House Meeting</b></li>
@@ -462,34 +463,34 @@
 	  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
 	  '.js><\/script>')
   </script>
-  
+
   <script src="js/foundation.min.js"></script>
 	  <!--
-	  
+
 	  <script src="js/foundation/foundation.js"></script>
-	  
+
 	  <script src="js/foundation/foundation.alerts.js"></script>
-	  
+
 	  <script src="js/foundation/foundation.clearing.js"></script>
-	  
+
 	  <script src="js/foundation/foundation.cookie.js"></script>
-	  
+
 	  --><script src="js/foundation/foundation.dropdown.js"></script><!--
-	  
+
 	  <script src="js/foundation/foundation.forms.js"></script>
-	  
+
 	  <script src="js/foundation/foundation.joyride.js"></script>
-	  
+
 	  <script src="js/foundation/foundation.magellan.js"></script>
-	  
+
 	  <script src="js/foundation/foundation.orbit.js"></script>
-	  
+
 	  <script src="js/foundation/foundation.placeholder.js"></script>
-	  
+
 	  <script src="js/foundation/foundation.reveal.js"></script>
-	  
+
 	  <script src="js/foundation/foundation.section.js"></script>
-	  
+
 	 --><script src="js/foundation/foundation.tooltips.js"></script><!--
 
 	  -->
@@ -532,7 +533,7 @@
   				$(this).attr("data-oldclass", oldClass).removeClass(oldClass).addClass("no-bullet");
   			});
   			$(".list > li > a").removeClass("icon-box");
-  			$(".icon").filter(function() { 
+  			$(".icon").filter(function() {
 				return !$(this).parent().parent().hasClass("popular");
 			}).attr("style", "display:none");
   		}
@@ -544,7 +545,7 @@
   				$(this).addClass(oldClass).removeClass("no-bullet").attr("data-oldclass", "");
   			});
   			$(".list > li > a").addClass("icon-box");
-  			$(".icon").filter(function() { 
+  			$(".icon").filter(function() {
 				return !$(this).parent().parent().hasClass("popular");
 			}).attr("style", "");
   		}
