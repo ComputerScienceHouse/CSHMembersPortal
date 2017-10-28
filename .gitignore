@@ -113,3 +113,6 @@ webnews/
 webroster/
 ybook2003/
 yearbook/
+
+# Ignore Config File from git
+data/config.json
