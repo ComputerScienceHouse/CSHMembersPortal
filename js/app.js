@@ -45,7 +45,7 @@ app.controller("MembersController", ['$scope', '$http', function($scope, $http) 
   // Get the quotes
     $scope.quote = [];
     $http.get("./data/config.json").success(function (response) {
-        $http.get("http://localhost:3000/" + response['quotefaultAPI'] + "/random").success(function (response) {
+        $http.get("https://quotefault-api.csh.rit.edu/" + response['quotefaultAPI'] + "/random").success(function (response) {
             $scope.quote = response;
         }).error(function (error) {
             console.error("Error getting quote from API");
