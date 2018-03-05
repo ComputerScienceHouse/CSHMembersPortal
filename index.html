@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
+    <meta name="theme-color" content="#B0197E">
     <title>CSH Members Portal</title>
     <!-- Apple Icon -->
     <link rel="apple-touch-icon" sizes="152x152" href="./img/apple-touch-icon.png">
@@ -47,11 +48,15 @@
                     <div class="row">
                         <div class="col-md-2 col-sm-4 col-xs-6 center" data-ng-repeat="link in popular">
                             <a data-ng-show="link.href" href="{{ link.href }}" class="icon-box popular-box">
-                                <webicon class= "icon" icon="{{ link.icon }}"></webicon>
+                                <span data-ng-show="showIcons && link.icon">
+                                            <webicon class= "icon" icon="{{ link.icon }}"></webicon>
+                                </span>
                                 <p>{{ link.name }}</p>
                             </a>
                             <a data-ng-show="link.dropdown" href="#" data-toggle="dropdown" class="icon-box popular-box" id="{{ link.icon }}">
-                                <webicon class="icon" icon="{{ link.icon }}"></webicon>
+                                <span data-ng-show="showIcons && link.icon">
+                                    <webicon class="icon" icon="{{ link.icon }}"></webicon>
+                                </span>
                                 <p>{{ link.name }}</p>
                             </a>
                             <ul data-ng-show="link.dropdown" class="dropdown-menu" role="menu" aria-labelledby="{{ link.icon }}">
@@ -116,6 +121,7 @@
             <!-- col-md-9 col-sm-12 -->
                 <!-- Meeting Times -->
                 <meetings data="meetings"></meetings>
+                <quote data="quote"></quote>
         </div>
     </div>
     </div>

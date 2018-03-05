@@ -17,6 +17,16 @@ app.directive("meetings", function() {
   };
 });
 
+app.directive("quote", function() {
+    return {
+        restrict: "E",
+        templateUrl: "templates/quote.html",
+        scope: {
+            quote: "=data"
+        }
+    };
+});
+
 app.controller("MembersController", ['$scope', '$http', function($scope, $http) {
 
   // Toggle showing the icons
@@ -32,6 +42,18 @@ app.controller("MembersController", ['$scope', '$http', function($scope, $http) 
     console.error("Error getting meetings.json");
   });
 
+  // Get the quotes
+    $scope.quote = [];
+    $http.get("./data/config.json").success(function (response) {
+        $http.get("https://quotefault-api.csh.rit.edu/" + response['quotefaultAPI'] + "/random").success(function (response) {
+            $scope.quote = response;
+        }).error(function (error) {
+            console.error("Error getting quote from API");
+        });
+    }).error(function (error) {
+        console.error("Error getting config.json");
+    });
+
   // Get all the links
   $scope.sections = [];
   $scope.popular = [];
@@ -39,7 +61,7 @@ app.controller("MembersController", ['$scope', '$http', function($scope, $http) 
     $scope.sections = response;
     // Find the popular links
     for (var i = 0; i < $scope.sections.length; i++) {
-      var section = $scope.sections[i]; 
+      var section = $scope.sections[i];
       for (var j = 0; j < section.links.length; j++ ) {
         if (section.links[j].hasOwnProperty("popular")) {
           $scope.popular.push(section.links[j]);
