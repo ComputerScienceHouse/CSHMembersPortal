@@ -52,11 +52,6 @@
         "href": "https://discourse.csh.rit.edu",
         "icon": "material:forum",
         "popular": true
-      },
-      {
-        "name": "WebNews",
-        "href": "https://webnews.csh.rit.edu",
-        "icon": "material:chat-bubble-outline"
       }
     ]
   },
