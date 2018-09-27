@@ -1,0 +1,62 @@
+[
+  {
+    "name": "House",
+    "day": "SUN",
+    "time": "7:15"
+  },
+  {
+    "name": "PR",
+    "day": "MON",
+    "time": "7:30"
+  },
+  {
+    "name": "Financial",
+    "day": "MON",
+    "time": "8:00"
+  },
+  {
+    "name": "Eval",
+    "day": "MON",
+    "time": "8:30"
+  },
+  {
+    "name": "Imps",
+    "day": "TUE",
+    "time": "7:30"
+  },
+  {
+    "name": "R&D",
+    "day": "TUE",
+    "time": "8:00"
+  },
+  {
+    "name": "Smartroom Ad-Hoc",
+    "day": "TUE",
+    "time": "7:30"
+  },
+  {
+    "name": "History",
+    "day": "WED",
+    "time": "8:00"
+  },
+  {
+    "name": "History Discussion",
+    "day": "WED",
+    "time": "8:30"
+  },
+  {
+    "name": "OpComm",
+    "day": "WED",
+    "time": "9:00"
+  },
+  {
+    "name": "Social",
+    "day": "THU",
+    "time": "8:00"
+  },
+  {
+    "name": "Eboard",
+    "day": "THU",
+    "time": "8:30"
+  }
+]
