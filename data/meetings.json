@@ -5,9 +5,9 @@
     "time": "7:15"
   },
   {
-    "name": "Insights",
+    "name": "PR",
     "day": "MON",
-    "time": "7:45"
+    "time": "7:30"
   },
   {
     "name": "Financial",
@@ -20,34 +20,34 @@
     "time": "8:30"
   },
   {
-    "name": "History",
-    "day": "TUE",
-    "time": "7:00"
-  },
-  {
-    "name": "History Discussion",
+    "name": "Imps",
     "day": "TUE",
     "time": "7:30"
   },
   {
     "name": "R&D",
     "day": "TUE",
-    "time": "8:30"
+    "time": "8:00"
   },
   {
-    "name": "Imps",
-    "day": "WED",
-    "time": "7:00"
+    "name": "Smartroom Ad-Hoc",
+    "day": "TUE",
+    "time": "10:00"
   },
   {
-    "name": "OpComm",
+    "name": "History",
     "day": "WED",
     "time": "8:00"
   },
   {
-    "name": "PR",
-    "day": "THU",
-    "time": "7:30"
+    "name": "History Discussion",
+    "day": "WED",
+    "time": "8:30"
+  },
+  {
+    "name": "OpComm",
+    "day": "WED",
+    "time": "9:00"
   },
   {
     "name": "Social",
