@@ -1,26 +1,18 @@
-
-  <div class="col-md-3 col-sm-12">
-    <div class="panel panel-primary center">
-      <div class="panel-heading">
-        <div class="panel-title">
-          <strong>Meetings Times</strong>
-        </div>
-      </div>
-      <div class="panel-body">
+<div class="card bg-white center">
+  <h5 class="card-header bg-primary text-white">Meeting Times</h5>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-12 col-sm-4 col-4" data-ng-repeat="meeting in meetings">
         <div class="row">
-          <div class="col-md-12 col-sm-4 col-xs-4" data-ng-repeat="meeting in meetings">
-            <div class="row">
-              <div class="col-md-6 col-sm-6 col-xs-12">
-                <p><strong>{{ meeting.name }}</strong></p>
-              </div>
-              <div class="col-md-6 col-sm-6 col-xs-12">
-                <p>{{ meeting.day }} {{ meeting.time }}</p>
-              </div>
-              <hr/>
-            </div>
+          <div class="col-md-6 col-sm-6 col-12">
+            <p><strong>{{ meeting.name }}</strong></p>
           </div>
+          <div class="col-md-6 col-sm-6 col-12">
+            <p>{{ meeting.day }} {{ meeting.time }}</p>
+          </div>
+          <hr/>
         </div>
       </div>
     </div>
   </div>
-  
+</div>

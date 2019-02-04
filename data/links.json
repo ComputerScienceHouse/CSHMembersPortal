@@ -48,15 +48,15 @@
         "icon": "material:language"
       },
       {
+        "name": "Conditional",
+        "href": "https://conditional.csh.rit.edu",
+        "icon": "material:group-add"
+      },
+      {
         "name": "Discourse",
         "href": "https://discourse.csh.rit.edu",
         "icon": "material:forum",
         "popular": true
-      },
-      {
-        "name": "WebNews",
-        "href": "https://webnews.csh.rit.edu",
-        "icon": "material:chat-bubble-outline"
       }
     ]
   },
@@ -72,7 +72,7 @@
         "name": "Gallery",
         "href": "https://gallery.csh.rit.edu",
         "icon": "material:photo",
-	"popular": true
+        "popular": true
       },
       {
         "name": "Segfault Archive",
@@ -83,6 +83,11 @@
         "name": "Quotefault",
         "href": "https://quotefault.csh.rit.edu/",
         "icon": "foundation:comment-quotes"
+      },
+      {
+        "name": "Game Night",
+        "href": "https://game-night.csh.rit.edu",
+        "icon": "foundation:die-three"
       }
     ]
   },
@@ -111,9 +116,9 @@
         "icon": "material:mail"
       },
       {
-        "name": "Eval Database",
-        "href": "https://eval.csh.rit.edu",
-        "icon": "material:group-add"
+        "name": "Account Self-Service",
+        "href": "https://account.csh.rit.edu/",
+        "icon": "material:settings"
       },
       {
         "name": "Packet",
@@ -132,23 +137,24 @@
       },
       {
         "name": "Slack",
-        "dropdown": [
-          {
-            "name": "Web Client",
-            "href": "https://cshrit.slack.com"
-          },
-          {
-            "name": "Request an Invite",
-            "href": "https://cshrit.signup.team"
-          }
-       ],
+        "href": "https://cshrit.slack.com",
         "icon": "fa:slack",
         "popular": true
       },
       {
-          "name": "Ballots",
-          "href": "https://ballots.csh.rit.edu",
-          "icon": "material:content-paste"
+        "name": "Ballots",
+        "href": "https://ballots.csh.rit.edu",
+        "icon": "material:content-paste"
+      },
+      {
+        "name": "Theme Switcher",
+        "href": "https://themeswitcher.csh.rit.edu",
+        "icon": "material:filter"
+      },
+      {
+        "name": "Ride Board",
+        "href": "https://rideboard.csh.rit.edu/",
+        "icon": "material:directions-car"
       }
     ]
   },
