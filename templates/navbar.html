@@ -1,34 +1,136 @@
 <!-- Navbar -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary justify-content-center">
-  <div class="container">
-    <a class="navbar-brand" href="#">Members</a>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#nav-responsive">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <!-- Responsive Collapse -->
-    <div class="collapse navbar-collapse" id="nav-responsive">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item my-auto">
-          <a class="nav-link" href="https://csh.rit.edu">Public Site</a>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav ml-auto">
-        <!-- Dropdown -->
-        <li class="nav-item navbar-user dropdown" >
-          <a class="nav-link dropdown-toggle mt-2" data-toggle="dropdown" href="#" id="nav-drop" aria-expanded="false">
-            <img ng-src="{{profile}}"> {{ name }}
-          </a>
-          <div class="dropdown-menu" aria-labelledby="nav-drop">
-            <div id="show-icons" class="checkbox dropdown-item">
-              <label><input type="checkbox" ng-model="showIcons" ng-click="saveIconSetting()" /> Show Icons</label>
-            </div>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="https://profiles.csh.rit.edu">Profiles</a>
-            <a class="dropdown-item" href="https://members.csh.rit.edu/sso/logout">Logout</a>
-          </div>
-        </li>
-      </ul>
+    <div class="container">
+        <a class="navbar-brand" href="#">Members</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#nav-responsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Responsive Collapse -->
+        <div class="collapse navbar-collapse" id="nav-responsive">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item my-auto">
+                    <a class="nav-link" href="https://csh.rit.edu">Public Site</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav ml-auto">
+                <!-- Dropdown -->
+                <li class="nav-item navbar-user dropdown">
+                    <a class="nav-link dropdown-toggle mt-2" data-toggle="dropdown" href="#" id="nav-drop"
+                       aria-expanded="false">
+                        <img ng-src="{{profile}}"> {{ name }}
+                    </a>
+                    <!-- New Dropdown -->
+                    <div class="dropdown-menu icondropdown" aria-labelledby="nav-drop">
+                        <div id="show-icons" class="checkbox dropdown-item">
+                            <label><input type="checkbox" ng-model="showIcons" ng-click="saveIconSetting()"/> Show
+                                Icons</label>
+                        </div>
+                        <div class="dropdown-divider"></div>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <a href="https://profiles.csh.rit.edu">
+                                        <figure class="figure">
+                                            <img src="https://img.icons8.com/material/26/000000/user-male-circle.png"
+                                                 class="figure-img" alt="Profiles"><br>
+                                            <figcaption class="text-center">Profiles</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+
+                                <div class="col-xs-12">
+                                    <a href="https://bit.ly/1fOuXMn">
+                                        <figure class="figure">
+                                            <img src="https://img.icons8.com/material-rounded/24/000000/calendar.png"
+                                                 class="figure-img" alt="Calendar"><br>
+                                            <figcaption>Calendar</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+
+                                <div class="col-xs-12">
+                                    <a href="https://discourse.csh.rit.edu">
+                                        <figure class="figure">
+                                            <img src="https://img.icons8.com/material/24/000000/speech-bubble.png"
+                                                 class="figure-img" alt="Discourse"><br>
+                                            <figcaption>Discourse</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <a href="https://gallery.csh.rit.edu">
+                                        <figure class="figure">
+                                            <img src="https://img.icons8.com/material/50/000000/picture.png"
+                                                 class="figure-img" alt="Gallery"><br>
+                                            <figcaption>Gallery</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+
+                                <div class="col-xs-12">
+                                    <a href="https://members.csh.rit.edu">
+                                        <figure class="figure">
+                                            <img src="https://img.icons8.com/material-rounded/24/000000/home-page.png"
+                                                 class="figure-img" alt="Members Portal"><br>
+                                            <figcaption>Portal</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+
+                                <div class="col-xs-12">
+                                    <a href="https://conditional.csh.rit.edu">
+                                        <figure class="figure">
+                                            <img src="https://img.icons8.com/material-rounded/24/000000/add-user-group-man-man.png"
+                                                 class="figure-img" alt="Conditional"><br>
+                                            <figcaption>Conditional</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <a href="https://wiki.csh.rit.edu/wiki/Main_Page">
+                                        <figure class="figure">
+                                            <img src="https://img.icons8.com/windows/32/000000/wikipedia.png"
+                                                 class="figure-img" alt="CSH Wiki"><br>
+                                            <figcaption>Wiki</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+
+                                <div class="col-xs-12">
+                                    <a href="https://quotefault.csh.rit.edu/">
+                                        <figure class="figure">
+                                            <img src="https://img.icons8.com/material/24/000000/quote.png"
+                                                 class="figure-img" alt="Quotefault"><br>
+                                            <figcaption>Quotefault</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+
+                                <div class="col-xs-12">
+                                    <a href="https://cshrit.slack.com/">
+                                        <figure class="figure">
+                                            <img src="https://img.icons8.com/material/24/000000/slack.png"
+                                                 class="figure-img" alt="Slack"><br>
+                                            <figcaption>Slack</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://members.csh.rit.edu/sso/logout">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </nav>
 <!-- /.navbar -->
