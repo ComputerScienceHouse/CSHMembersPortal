@@ -184,6 +184,10 @@
         "name": "Twitter",
         "dropdown": [
           {
+            "name": "Primary Account",
+            "href": "https://twitter.com/RITCSH"
+          },
+          {
             "name": "History",
             "href": "https://twitter.com/CSH_History"
           },
@@ -192,9 +196,10 @@
             "href": "https://twitter.com/OPCOMM"
           },
           {
-            "name": "The Committee",
-            "href": "https://twitter.com/FUMNCommittee"
+            "name": "CSH Hacks",
+            "href": "https://twitter.com/csh_hacks"
           }
+
         ],
         "icon": "brandico:twitter-bird"
       },
