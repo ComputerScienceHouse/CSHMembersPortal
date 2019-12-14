@@ -187,6 +187,21 @@
         "icon": "brandico:facebook-rect"
       },
       {
+        "name": "Instagram",
+        "dropdown": [
+          {
+            "name": "Primary",
+            "href": "https://www.instagram.com/computersciencehouse/"
+          },
+          {
+            "name": "CSH Hacks",
+            "href": "https://www.instagram.com/cshhacks/"
+          }
+
+        ],
+        "icon": "brandico:instagram-filled"
+      },
+      {
         "name": "Twitter",
         "dropdown": [
           {
