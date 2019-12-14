@@ -176,7 +176,13 @@
           {
             "name": "Private Group",
             "href": "https://www.facebook.com/groups/16764593277/"
+          },
+          {
+            "name": "CSH Hacks Page",
+            "href": "https://www.facebook.com/cshhacks"
           }
+
+          
         ],
         "icon": "brandico:facebook-rect"
       },
