@@ -126,6 +126,11 @@
         "icon": "material:check-box"
       },
       {
+        "name": "Selections",
+        "href": "https://selections.csh.rit.edu",
+        "icon": "foundation:page-filled"
+      },
+      {
         "name": "User Machines",
         "href": "https://wiki.csh.rit.edu/wiki/User_services_machine",
         "icon": "material:computer"
@@ -140,6 +145,11 @@
         "href": "https://cshrit.slack.com",
         "icon": "fa:slack",
         "popular": true
+      },
+      {
+        "name": "Swag",
+        "href": "https://swag.csh.rit.edu",
+        "icon": "material:attach-money"
       },
       {
         "name": "Ballots",
