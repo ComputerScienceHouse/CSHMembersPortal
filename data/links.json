@@ -192,6 +192,11 @@
     "name": "CSH On The Web",
     "links": [
       {
+        "name": "GitHub",
+        "href": "https://github.com/ComputerScienceHouse",
+        "icon": "icomoon:github"
+      },
+      {
         "name": "Facebook",
         "dropdown": [
           {
@@ -227,11 +232,6 @@
         "name": "LinkedIn",
         "href": "https://www.linkedin.com/groups/971/",
         "icon": "brandico:linkedin"
-      },
-      {
-        "name": "GitHub",
-        "href": "https://github.com/ComputerScienceHouse",
-        "icon": "icomoon:github"
       }
     ]
   },
