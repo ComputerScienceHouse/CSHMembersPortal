@@ -182,9 +182,9 @@
         "icon": "material:extension"
       },
       {
-		"name": "Resumes",
-		"href": "https://resumes.csh.rit.edu",
-		"icon": "fa:file-text"
+        "name": "Resumes",
+        "href": "https://resumes.csh.rit.edu",
+        "icon": "fa:file-text"
       },
       {
       	"name": "Pings",
