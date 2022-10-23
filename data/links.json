@@ -88,6 +88,11 @@
         "name": "Game Night",
         "href": "https://game-night.csh.rit.edu",
         "icon": "foundation:die-three"
+      },
+      {
+        "name": "Stuff",
+        "href": "https://stuff.csh.rit.edu",
+        "icon": "fa:th-list"
       }
     ]
   },
