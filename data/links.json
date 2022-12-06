@@ -152,6 +152,11 @@
         "icon": "material:content-paste"
       },
       {
+        "name": "Stuff",
+        "href": "https://stuff.csh.rit.edu",
+        "icon": "material:view-list"
+      },
+      {
         "name": "Theme Switcher",
         "href": "https://themeswitcher.csh.rit.edu",
         "icon": "material:filter"
