@@ -6,62 +6,62 @@
   },
   {
     "name": "R&D",
-    "day": "MON",
-    "time": "7:00"
-  },
-  {
-    "name": "Financial",
-    "day": "MON",
-    "time": "8:30"
-  },
-  {
-    "name": "Eboard",
-    "day": "MON",
-    "time": "9:00"
-  },
-  {
-    "name": "PR",
-    "day": "TUE",
+    "day": "WED",
     "time": "6:30"
   },
   {
-    "name": "Devcade",
-    "day": "TUE",
-    "time": "8:00"
-  },
-  {
-    "name": "IMPS",
-    "day": "WED",
+    "name": "Financial",
+    "day": "THU",
     "time": "6:00"
   },
   {
-    "name": "Evals",
-    "day": "WED",
-    "time": "7:00"
+    "name": "Eboard",
+    "day": "THU",
+    "time": "7:30"
   },
   {
-    "name": "History",
+    "name": "PR",
     "day": "WED",
     "time": "7:30"
   },
   {
-    "name": "History Discussion",
+    "name": "Devcade",
     "day": "WED",
     "time": "8:00"
   },
   {
+    "name": "IMPS",
+    "day": "TUE",
+    "time": "8:00"
+  },
+  {
+    "name": "Evals",
+    "day": "TUE",
+    "time": "7:00"
+  },
+  {
+    "name": "History",
+    "day": "MON",
+    "time": "6:30"
+  },
+  {
+    "name": "History Discussion",
+    "day": "TUE",
+    "time": "6:00"
+  },
+  {
     "name": "ImagineRIT",
-    "day": "WED",
-    "time": "9:00"
+    "day": "TBA",
+    "time": ""
   },
   {
     "name": "Social",
-    "day": "THU",
+    "day": "MON",
     "time": "7:00"
   },
   {
     "name": "OpComm",
-    "day": "THU",
-    "time": "8:00"
+    "day": "MON",
+    "time": "8:30"
   }
 ]
