@@ -10,36 +10,23 @@ app.directive("navbar", function() {
 app.filter("sortDate", function(){
   return function(obj) {
     const items = [];
-    const result = [];
-    const today = new Date().getDay()
-    const days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"]
-    angular.forEach(obj, function(val, key) {
-      let relative = days.indexOf(val.day) - today % 7
+    const today = new Date().getDay();
+    const days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+    angular.forEach(obj, function(val, _) {
+      let relative = days.indexOf(val.day) - today % 7;
       if (relative < 0) {
-        relative = relative + 5 + today
+        relative = relative + 5 + today;
       }
-      val.relaDay = relative // day relative to today for sorting
+      val.relaDay = relative; // day relative to today for sorting
       items.push(val);
 
     });
 
     items.sort(function(a,b){
-      console.log(a.name + " " + a.day + " " + a.relaDay.toString())
       if (a.relaDay === b.relaDay) {
-        if (a.time < b.time) {
-          return -1
-        } else {
-          return 1
-        }
+        return a.time - b.time;
       }
-
-      if (a.relaDay < b.relaDay) {
-        return -1
-      } else {
-        return 1
-      }
-
-      return 0
+      return a.relaDay - b.relaDay;
     })
     return items;
   };
