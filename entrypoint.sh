@@ -4,9 +4,14 @@ echo "Adding to Config"
 
 sed -i 's/80/8080/g' /usr/local/apache2/conf/httpd.conf
 
+sed -i 's/LoadModule mpm_event_module/#LoadModule mpm_event_module/g' /usr/local/apache2/conf/httpd.conf
+
 echo "LoadModule userdir_module modules/mod_userdir.so
 LoadModule rewrite_module modules/mod_rewrite.so
 LoadModule auth_openidc_module /usr/lib/apache2/modules/mod_auth_openidc.so
+LoadModule php_module /usr/lib/apache2/modules/libphp8.2.so
+LoadModule perl_module /usr/lib/apache2/modules/mod_perl.so
+LoadModule mpm_prefork_module modules/mod_mpm_prefork.so
 IndexOptions FancyIndexing HTMLTable VersionSort
 Alias /icons/ "/usr/local/apache2/icons/"
 <Directory "/usr/local/apache2/icons">
