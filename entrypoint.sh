@@ -7,8 +7,17 @@ sed -i 's/80/8080/g' /usr/local/apache2/conf/httpd.conf
 echo "LoadModule userdir_module modules/mod_userdir.so
 LoadModule rewrite_module modules/mod_rewrite.so
 LoadModule auth_openidc_module /usr/lib/apache2/modules/mod_auth_openidc.so
+<Directory /users>
+  #php_admin_value engine Off
+  Options all MultiViews -Indexes
+  DirectoryIndex index.html index.htm
+  <FilesMatch "\.php$">
+    Require all denied
+  </FilesMatch>
+  Require all granted
+</Directory>
 <VirtualHost *:8080>
-    UserDir .html_pages/
+    UserDir .html_pages
     DocumentRoot /usr/local/apache2/htdocs/
     RewriteEngine On
 
