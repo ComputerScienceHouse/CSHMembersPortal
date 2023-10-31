@@ -13,7 +13,7 @@ LoadModule auth_openidc_module /usr/lib/apache2/modules/mod_auth_openidc.so
     RewriteEngine On
 
     OIDCRedirectURI $SERVER_NAME/sso/redirect
-    OIDCXForwardedHeaders X-Forwarded-Host
+    OIDCXForwardedHeaders X-Forwarded-Host X-Forwarded-Proto X-Forwarded-Port
     OIDCCryptoPassphrase $(tr -dc A-Za-z0-9 </dev/urandom | head -c 64 ; echo '')
     OIDCProviderMetadataURL https://sso.csh.rit.edu/auth/realms/csh/.well-known/openid-configuration
     OIDCSSLValidateServer On
