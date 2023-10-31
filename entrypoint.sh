@@ -17,6 +17,13 @@ LoadModule mpm_prefork_module modules/mod_mpm_prefork.so
     SetHandler application/x-httpd-php
 </FilesMatch>
 
+<FileMatch \.(cgi|pl)$>
+    SetHandler perl-script
+    PerlResponseHandler ModPerl::PerlRun
+    PerlOptions +ParseHeaders
+    Options +ExecCGI
+</FilesMatch>
+
 IndexOptions FancyIndexing HTMLTable VersionSort
 Alias /icons/ "/usr/local/apache2/icons/"
 <Directory "/usr/local/apache2/icons">
