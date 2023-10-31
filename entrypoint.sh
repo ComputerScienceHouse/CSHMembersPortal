@@ -8,7 +8,7 @@ echo "LoadModule userdir_module modules/mod_userdir.so
 LoadModule rewrite_module modules/mod_rewrite.so
 LoadModule auth_openidc_module /usr/lib/apache2/modules/mod_auth_openidc.so
 <Directory ~ /(users/)?u\d+/(u0/)?.*/\.html_pages>
-	php_admin_value engine Off
+	#php_admin_value engine Off
 	Options	all MultiViews +Indexes
 	DirectoryIndex index.html index.htm
 	Require all granted
