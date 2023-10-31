@@ -109,7 +109,7 @@ app.controller("MembersController", ['$scope', '$http', function($scope, $http) 
   $scope.name = "";
   $scope.profile = "";
   var imgStr = "https://profiles.csh.rit.edu/image/"
-  $http.get("https://members.csh.rit.edu/sso/redirect?info=json").success(function (response) {
+  $http.get("/sso/redirect?info=json").success(function (response) {
     $scope.profile = imgStr.concat(response.id_token.preferred_username);
     $scope.name = response.id_token.preferred_username;//response.userinfo.given_name + " " + response.userinfo.family_name;
   }).error(function (error) { 
