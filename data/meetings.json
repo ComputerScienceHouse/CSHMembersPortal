@@ -68,5 +68,10 @@
     "name": "3DA",
     "day": "WED",
     "time": "8:00"
+  },
+  {
+    "name": "ImagineRIT",
+    "day": "TUE",
+    "time": "10:00"
   }
 ]

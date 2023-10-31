@@ -21,10 +21,9 @@ app.filter("sortDate", function(){
       items.push(val);
 
     });
-
     items.sort(function(a,b){
       if (a.relaDay === b.relaDay) {
-        return a.time - b.time;
+        return Number(a.time.replace(":", "")) - Number(b.time.replace(":", ""));
       }
       return a.relaDay - b.relaDay;
     })
@@ -100,7 +99,7 @@ app.controller("MembersController", ['$scope', '$http', function($scope, $http) 
     $scope.profile = imgStr.concat(response.id_token.preferred_username);
     $scope.name = response.id_token.preferred_username;//response.userinfo.given_name + " " + response.userinfo.family_name;
   }).error(function (error) { 
-  console.error("Error getting sso");
+    console.error("Error getting sso");
     $scope.profile = imgStr.concat("test");
     $scope.name = "Test";
   });
