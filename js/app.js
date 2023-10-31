@@ -14,8 +14,8 @@ app.filter("sortDate", function(){
     const now = new Date();
 
     const today = now.getDay();
-    // NOTE: assumes meetings are always during PM. 
-    const currentTime = now.getHours() * 60 + now.getMinutes() + 12 * 60;
+    // NOTE: assumes meetings are always during PM. Subtract 12 hours. 
+    const currentTime = now.getHours() * 60 + now.getMinutes() - 12 * 60;
     const days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
     angular.forEach(obj, function(val, _) {
       let relativeDay = days.indexOf(val.day) - today % 7;
@@ -23,7 +23,10 @@ app.filter("sortDate", function(){
       const timeParts = val.time.split(":");
       let relativeTime = Number(timeParts[0]) * 60 + Number(timeParts[1]) - currentTime;
 
-      if (relativeTime < 0) {
+      let beginTime = "Beginning Soon (tm)";
+
+      // We don't move meetings that are still going on.
+      if (relativeTime < -val.lengthMinutes && relativeDay != 0) {
         relativeTime += 1440;
         relativeDay--;
       }
@@ -31,8 +34,26 @@ app.filter("sortDate", function(){
         relativeDay = relativeDay + 5 + today;
       }
 
+      if (relativeDay > 0) {
+        const daysUntil = Math.round(relativeDay + relativeTime / 1440)
+        if (daysUntil == 1) {
+          beginTime = "Tomorrow";
+        } else {
+          beginTime = `In ${daysUntil} Days`;
+        }
+      } else if (relativeTime > 60) {
+        beginTime = `In ${Math.round(relativeTime / 60)} Hour${relativeTime >= 90 ? "s" : ""}`;
+      } else if (relativeTime > 5) {
+        beginTime = `In ${Math.round(relativeTime)} Minutes`;
+      } else {
+        // Meeting time is less than 5, and may be negative. 
+        // That means the meeting is going on right now. 
+        beginTime = "RIGHT NOW!"
+      }
+
       val.relaTime = relativeTime;
-      val.relaDay = relativeDay; // day relative to today for sorting
+      val.relaDay = relativeDay;
+      val.beginTime = beginTime;
       items.push(val);
 
     });

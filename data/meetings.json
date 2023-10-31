@@ -2,76 +2,91 @@
   {
     "name": "House",
     "day": "SUN",
-    "time": "7:15"
+    "time": "7:15",
+    "lengthMinutes": 90
   },
   {
     "name": "R&D",
     "day": "WED",
-    "time": "8:00"
+    "time": "8:00",
+    "lengthMinutes": 60
   },
   {
     "name": "Financial",
     "day": "THU",
-    "time": "6:00"
+    "time": "6:00",
+    "lengthMinutes": 15
   },
   {
     "name": "Eboard",
     "day": "THU",
-    "time": "7:30"
+    "time": "7:30",
+    "lengthMinutes": 120
   },
   {
     "name": "OpComm",
     "day": "MON",
-    "time": "8:30"
+    "time": "8:30",
+    "lengthMinutes": 60
   },
   {
     "name": "PR",
     "day": "WED",
-    "time": "7:30"
+    "time": "7:30",
+    "lengthMinutes": 60
   },
   {
     "name": "Devcade",
     "day": "FRI",
-    "time": "8:00"
+    "time": "8:00",
+    "lengthMinutes": 60
   },
   {
     "name": "IMPS",
     "day": "TUE",
-    "time": "8:00"
+    "time": "8:00",
+    "lengthMinutes": 60
   },
   {
     "name": "Evals",
     "day": "TUE",
-    "time": "7:00"
+    "time": "7:00",
+    "lengthMinutes": 60
   },
   {
     "name": "History",
     "day": "MON",
-    "time": "6:00"
+    "time": "6:00",
+    "lengthMinutes": 30
   },
   {
     "name": "History Discussion",
     "day": "TUE",
-    "time": "6:00"
+    "time": "6:00",
+    "lengthMinutes": 60
   },
   {
     "name": "Social",
     "day": "MON",
-    "time": "7:00"
+    "time": "7:00",
+    "lengthMinutes": 60
   },
   {
     "name": "Constitution",
     "day": "TUE",
-    "time": "9:00"
+    "time": "9:00",
+    "lengthMinutes": 60
   },
   {
     "name": "3DA",
     "day": "WED",
-    "time": "8:00"
+    "time": "8:00",
+    "lengthMinutes": 30
   },
   {
     "name": "ImagineRIT",
     "day": "TUE",
-    "time": "10:00"
+    "time": "10:00",
+    "lengthMinutes": 60
   }
 ]
