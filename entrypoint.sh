@@ -83,7 +83,7 @@ HeaderName HEADER.html
     OIDCSSLValidateServer On
     OIDCClientID $OIDC_CLIENT_ID
     OIDCClientSecret $OIDC_CLIENT_SECRET
-    OIDCCookieDomain csh.rit.edu
+    OIDCCookieDomain $OIDC_COOKIE_DOMAIN
     OIDCCookie sso_session
     OIDCSessionInactivityTimeout 1800
     OIDCSessionMaxDuration 28800
