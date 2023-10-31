@@ -12,6 +12,11 @@ LoadModule auth_openidc_module /usr/lib/apache2/modules/mod_auth_openidc.so
 LoadModule php_module /usr/lib/apache2/modules/libphp8.2.so
 LoadModule perl_module /usr/lib/apache2/modules/mod_perl.so
 LoadModule mpm_prefork_module modules/mod_mpm_prefork.so
+
+<FilesMatch \.php$>
+    SetHandler application/x-httpd-php
+</FilesMatch>
+
 IndexOptions FancyIndexing HTMLTable VersionSort
 Alias /icons/ "/usr/local/apache2/icons/"
 <Directory "/usr/local/apache2/icons">
@@ -48,12 +53,14 @@ AddIcon /icons/blank.gif ^^BLANKICON^^
 DefaultIcon /icons/unknown.gif
 ReadmeName README.html
 HeaderName HEADER.html
+
 <Directory ~ /(users/)?u\d+/(u0/)?.*/\.html_pages>
 	#php_admin_value engine Off
 	Options	all MultiViews +Indexes
 	DirectoryIndex index.html index.htm
 	Require all granted
 </Directory>
+
 <VirtualHost *:8080>
     UserDir .html_pages
     DocumentRoot /usr/local/apache2/htdocs/
