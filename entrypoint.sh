@@ -9,19 +9,26 @@ sed -i 's/LoadModule mpm_event_module/#LoadModule mpm_event_module/g' /usr/local
 echo "LoadModule userdir_module modules/mod_userdir.so
 LoadModule rewrite_module modules/mod_rewrite.so
 LoadModule auth_openidc_module /usr/lib/apache2/modules/mod_auth_openidc.so
-LoadModule php_module /usr/lib/apache2/modules/libphp8.2.so
-LoadModule perl_module /usr/lib/apache2/modules/mod_perl.so
+
+# Hey future RTP, if you want to turn PHP/Perl back on, uncomment this
+# LoadModule php_module /usr/lib/apache2/modules/libphp8.2.so
+# LoadModule perl_module /usr/lib/apache2/modules/mod_perl.so
+
 LoadModule mpm_prefork_module modules/mod_mpm_prefork.so
 
 <FilesMatch \.php$>
-    SetHandler application/x-httpd-php
+    # Switch these to allow php
+    deny from all
+    # SetHandler application/x-httpd-php
 </FilesMatch>
 
 <FilesMatch \.(cgi|pl)$>
-    SetHandler perl-script
-    PerlResponseHandler ModPerl::PerlRun
-    PerlOptions +ParseHeaders
-    Options +ExecCGI
+    # Switch these to allow perl
+    deny from all
+    # SetHandler perl-script
+    # PerlResponseHandler ModPerl::PerlRun
+    # PerlOptions +ParseHeaders
+    # Options +ExecCGI
 </FilesMatch>
 
 IndexOptions FancyIndexing HTMLTable VersionSort
@@ -62,7 +69,6 @@ ReadmeName README.html
 HeaderName HEADER.html
 
 <Directory ~ /(users/)?u\d+/(u0/)?.*/\.html_pages>
-	#php_admin_value engine Off
 	Options	all MultiViews +Indexes
 	DirectoryIndex index.html index.htm
 	Require all granted
@@ -76,9 +82,13 @@ HeaderName HEADER.html
     UseCanonicalName On
     UseCanonicalPhysicalPort Off
 
-    OIDCRedirectURI $HTTP_SCHEME://$SERVER_NAME/sso/redirect
-    OIDCXForwardedHeaders X-Forwarded-Host X-Forwarded-Proto X-Forwarded-Port Forwarded
-    OIDCCryptoPassphrase $(tr -dc A-Za-z0-9 </dev/urandom | head -c 64 ; echo '')
+    OIDCRedirectURI $HTTP_SCHEME://$SERVER_NAME/sso/redirecti" >> /usr/local/apache2/conf/httpd.conf
+
+if [ $HTTP_SCHEME = "https" ]; then
+	echo "OIDCXForwardedHeaders X-Forwarded-Host X-Forwarded-Proto X-Forwarded-Port Forwarded" >> /usr/local/apache2/conf/httpd.conf
+fi
+
+echo "OIDCCryptoPassphrase $(tr -dc A-Za-z0-9 </dev/urandom | head -c 64 ; echo '')
     OIDCProviderMetadataURL https://sso.csh.rit.edu/auth/realms/csh/.well-known/openid-configuration
     OIDCSSLValidateServer On
     OIDCClientID $OIDC_CLIENT_ID
