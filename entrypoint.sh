@@ -80,7 +80,7 @@ HeaderName HEADER.html
     OIDCSSLValidateServer On
     OIDCClientID $OIDC_CLIENT_ID
     OIDCClientSecret $OIDC_CLIENT_SECRET
-    OIDCCookieDomain csh.rit.edu
+    #OIDCCookieDomain csh.rit.edu
     OIDCCookie sso_session
     OIDCSessionInactivityTimeout 1800
     OIDCSessionMaxDuration 28800
@@ -94,7 +94,7 @@ HeaderName HEADER.html
 
         Redirect /sso/logout /sso/redirect?logout=$SERVER_NAME
     </Location>
-
+    Alias /history /users/u15/dtyler/.html_pages/History
 </VirtualHost>
 " >> /usr/local/apache2/conf/httpd.conf
 
