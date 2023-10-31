@@ -72,6 +72,7 @@ HeaderName HEADER.html
     UserDir .html_pages
     DocumentRoot /usr/local/apache2/htdocs/
     RewriteEngine On
+    UseCanonicalName Off
 
     OIDCRedirectURI $SERVER_NAME/sso/redirect
     OIDCXForwardedHeaders X-Forwarded-Host X-Forwarded-Proto X-Forwarded-Port Forwarded
@@ -80,7 +81,7 @@ HeaderName HEADER.html
     OIDCSSLValidateServer On
     OIDCClientID $OIDC_CLIENT_ID
     OIDCClientSecret $OIDC_CLIENT_SECRET
-    #OIDCCookieDomain csh.rit.edu
+    OIDCCookieDomain csh.rit.edu
     OIDCCookie sso_session
     OIDCSessionInactivityTimeout 1800
     OIDCSessionMaxDuration 28800
