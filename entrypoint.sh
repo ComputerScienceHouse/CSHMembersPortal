@@ -19,7 +19,7 @@ LoadModule auth_openidc_module /usr/lib/apache2/modules/mod_auth_openidc.so
     OIDCSSLValidateServer On
     OIDCClientID $OIDC_CLIENT_ID
     OIDCClientSecret $OIDC_CLIENT_SECRET
-    #OIDCCookieDomain csh.rit.edu
+    OIDCCookieDomain csh.rit.edu
     OIDCCookie sso_session
     OIDCSessionInactivityTimeout 1800
     OIDCSessionMaxDuration 28800
