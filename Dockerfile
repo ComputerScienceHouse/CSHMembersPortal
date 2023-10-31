@@ -2,6 +2,7 @@ FROM docker.io/httpd:2.4
 
 RUN apt update && apt install -y sssd ca-certificates libapache2-mod-auth-openidc
 
+RUN chmod 777 /usr/local/apache2/conf
 RUN chmod 666 /usr/local/apache2/conf/httpd.conf
 
 RUN rm -rf /usr/local/apache2/htdocs/*
