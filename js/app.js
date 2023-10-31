@@ -10,20 +10,35 @@ app.directive("navbar", function() {
 app.filter("sortDate", function(){
   return function(obj) {
     const items = [];
-    const today = new Date().getDay();
+
+    const now = new Date();
+
+    const today = now.getDay();
+    // NOTE: assumes meetings are always during PM. 
+    const currentTime = now.getHours() * 60 + now.getMinutes() + 12 * 60;
     const days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
     angular.forEach(obj, function(val, _) {
-      let relative = days.indexOf(val.day) - today % 7;
-      if (relative < 0) {
-        relative = relative + 5 + today;
+      let relativeDay = days.indexOf(val.day) - today % 7;
+
+      const timeParts = val.time.split(":");
+      let relativeTime = Number(timeParts[0]) * 60 + Number(timeParts[1]) - currentTime;
+
+      if (relativeTime < 0) {
+        relativeTime += 1440;
+        relativeDay--;
       }
-      val.relaDay = relative; // day relative to today for sorting
+      if (relativeDay < 0) {
+        relativeDay = relativeDay + 5 + today;
+      }
+
+      val.relaTime = relativeTime;
+      val.relaDay = relativeDay; // day relative to today for sorting
       items.push(val);
 
     });
     items.sort(function(a,b){
       if (a.relaDay === b.relaDay) {
-        return Number(a.time.replace(":", "")) - Number(b.time.replace(":", ""));
+        return a.relaTime - b.relaTime;
       }
       return a.relaDay - b.relaDay;
     })
