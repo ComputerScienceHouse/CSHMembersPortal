@@ -17,7 +17,7 @@ LoadModule mpm_prefork_module modules/mod_mpm_prefork.so
     SetHandler application/x-httpd-php
 </FilesMatch>
 
-<FileMatch \.(cgi|pl)$>
+<FilesMatch \.(cgi|pl)$>
     SetHandler perl-script
     PerlResponseHandler ModPerl::PerlRun
     PerlOptions +ParseHeaders
