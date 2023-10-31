@@ -72,9 +72,11 @@ HeaderName HEADER.html
     UserDir .html_pages
     DocumentRoot /usr/local/apache2/htdocs/
     RewriteEngine On
-    UseCanonicalName Off
+    ServerName $SERVER_NAME
+    UseCanonicalName On
+    UseCanonicalPhysicalPort Off
 
-    OIDCRedirectURI $SERVER_NAME/sso/redirect
+    OIDCRedirectURI $HTTP_SCHEME://$SERVER_NAME/sso/redirect
     OIDCXForwardedHeaders X-Forwarded-Host X-Forwarded-Proto X-Forwarded-Port Forwarded
     OIDCCryptoPassphrase $(tr -dc A-Za-z0-9 </dev/urandom | head -c 64 ; echo '')
     OIDCProviderMetadataURL https://sso.csh.rit.edu/auth/realms/csh/.well-known/openid-configuration
@@ -93,7 +95,7 @@ HeaderName HEADER.html
         AuthType openid-connect
         Require valid-user
 
-        Redirect /sso/logout /sso/redirect?logout=$SERVER_NAME
+        Redirect /sso/logout /sso/redirect?logout=$HTTP_SCHEME://$SERVER_NAME
     </Location>
     Alias /history /users/u15/dtyler/.html_pages/History
 </VirtualHost>
