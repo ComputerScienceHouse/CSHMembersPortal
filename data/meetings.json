@@ -8,7 +8,7 @@
   {
     "name": "R&D",
     "day": "WED",
-    "time": "8:00",
+    "time": "6:30",
     "lengthMinutes": 60
   },
   {
@@ -21,7 +21,7 @@
     "name": "Eboard",
     "day": "THU",
     "time": "7:30",
-    "lengthMinutes": 120
+    "lengthMinutes": 150
   },
   {
     "name": "OpComm",
@@ -33,11 +33,11 @@
     "name": "PR",
     "day": "WED",
     "time": "7:30",
-    "lengthMinutes": 60
+    "lengthMinutes": 30
   },
   {
     "name": "Devcade",
-    "day": "FRI",
+    "day": "WED",
     "time": "8:00",
     "lengthMinutes": 60
   },
@@ -56,7 +56,7 @@
   {
     "name": "History",
     "day": "MON",
-    "time": "6:00",
+    "time": "6:30",
     "lengthMinutes": 30
   },
   {
@@ -69,7 +69,7 @@
     "name": "Social",
     "day": "MON",
     "time": "7:00",
-    "lengthMinutes": 60
+    "lengthMinutes": 30
   },
   {
     "name": "Constitution",
@@ -80,8 +80,8 @@
   {
     "name": "3DA",
     "day": "WED",
-    "time": "8:00",
-    "lengthMinutes": 30
+    "time": "6:30",
+    "lengthMinutes": 15
   },
   {
     "name": "ImagineRIT",
