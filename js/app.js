@@ -26,7 +26,9 @@ app.filter("sortDate", function(){
       let beginTime = "Beginning Soon (tm)";
 
       // We don't move meetings that are still going on.
-      if (relativeTime < -val.lengthMinutes && relativeDay != 0) {
+      const shiftDate = (relativeTime < -val.lengthMinutes && relativeDay == 0) 
+                        || (relativeTime < 0 && relativeDay > 0)
+      if (shiftDate) {
         relativeTime += 1440;
         relativeDay--;
       }
