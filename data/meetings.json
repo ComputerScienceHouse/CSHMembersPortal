@@ -31,7 +31,7 @@
   },
   {
     "name": "Devcade",
-    "day": "FRI",
+    "day": "WED",
     "time": "8:00"
   },
   {
@@ -47,12 +47,12 @@
   {
     "name": "History",
     "day": "MON",
-    "time": "6:00"
+    "time": "6:30"
   },
   {
     "name": "History Discussion",
     "day": "TUE",
-    "time": "8:00"
+    "time": "6:00"
   },
   {
     "name": "Social",
@@ -68,5 +68,20 @@
     "name": "3DA",
     "day": "WED",
     "time": "6:30"
+  },
+  {
+    "name": "Imagine RIT",
+    "day": "MON",
+    "time": "5:30"
+  },
+  {
+    "name": "Imagine RIT",
+    "day": "THU",
+    "time": "6:30"
+  },
+  {
+    "name": "Yearbook",
+    "day": "WED",
+    "time": "8:00"
   }
 ]
