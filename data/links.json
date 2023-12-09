@@ -28,9 +28,15 @@
         "popular": true
       },
       {
-        "name": "Floor Map",
-        "href": "https://map.csh.rit.edu",
-        "icon": "material:map"
+        "name": "Conditional",
+        "href": "https://conditional.csh.rit.edu",
+        "icon": "material:group-add"
+      },
+      {
+        "name": "Discourse",
+        "href": "https://discourse.csh.rit.edu",
+        "icon": "material:forum",
+        "popular": true
       },
       {
         "name": "Constitution",
@@ -43,20 +49,14 @@
         "icon": "material:trending-down"
       },
       {
+        "name": "Floor Map",
+        "href": "https://map.csh.rit.edu",
+        "icon": "material:map"
+      },
+      {
         "name": "Alumni Map",
         "href": "https://alumnimap.csh.rit.edu",
         "icon": "material:language"
-      },
-      {
-        "name": "Conditional",
-        "href": "https://conditional.csh.rit.edu",
-        "icon": "material:group-add"
-      },
-      {
-        "name": "Discourse",
-        "href": "https://discourse.csh.rit.edu",
-        "icon": "material:forum",
-        "popular": true
       }
     ]
   },
@@ -75,14 +75,19 @@
         "popular": true
       },
       {
+        "name": "Quotefault",
+        "href": "https://quotefault.csh.rit.edu/",
+        "icon": "foundation:comment-quotes"
+      },
+      {
         "name": "Segfault Archive",
         "href": "https://segfault.csh.rit.edu/",
         "icon": "material:layers"
       },
       {
-        "name": "Quotefault",
-        "href": "https://quotefault.csh.rit.edu/",
-        "icon": "foundation:comment-quotes"
+        "name": "Devcade Website",
+        "href": "https://devcade.csh.rit.edu",
+        "icon": "fa:gamepad"
       },
       {
         "name": "Game Night",
@@ -105,40 +110,25 @@
         "icon": "material:local-drink"
       },
       {
+        "name": "Ride Board",
+        "href": "https://rideboard.csh.rit.edu/",
+        "icon": "material:directions-car"
+      },
+      {
+        "name": "LetMeIn",
+        "href": "https://letmein.csh.rit.edu",
+        "icon": "material:notifications"
+      },
+      {
         "name": "Webmail",
         "href": "https://webmail.csh.rit.edu",
         "icon": "material:send",
         "popular": true
       },
       {
-        "name": "Mailing Lists",
-        "href": "https://lists.csh.rit.edu",
-        "icon": "material:mail"
-      },
-      {
-        "name": "Account Self-Service",
-        "href": "https://account.csh.rit.edu/",
-        "icon": "material:settings"
-      },
-      {
-        "name": "Packet",
-        "href": "https://packet.csh.rit.edu",
-        "icon": "material:check-box"
-      },
-      {
-          "name": "HAROLD Audio Selector",
-          "href": "https://audiophiler.csh.rit.edu",
-          "icon": "material:music-note"
-      },
-      {
-        "name": "User Machines",
-        "href": "https://wiki.csh.rit.edu/wiki/User_services_machine",
-        "icon": "material:computer"
-      },
-      {
-        "name": "Webcomics",
-        "href": "https://c-yank.csh.rit.edu",
-        "icon": "material:view-compact"
+        "name": "HAROLD Audio Selector",
+        "href": "https://audiophiler.csh.rit.edu",
+        "icon": "material:music-note"
       },
       {
         "name": "Slack",
@@ -147,9 +137,14 @@
         "popular": true
       },
       {
-        "name": "Ballots",
-        "href": "https://ballots.csh.rit.edu",
-        "icon": "material:content-paste"
+        "name": "Packet",
+        "href": "https://packet.csh.rit.edu",
+        "icon": "material:check-box"
+      },
+      {
+        "name": "Resumes",
+        "href": "https://resumes.csh.rit.edu",
+        "icon": "fa:file-text"
       },
       {
         "name": "Theme Switcher",
@@ -157,9 +152,9 @@
         "icon": "material:filter"
       },
       {
-        "name": "Ride Board",
-        "href": "https://rideboard.csh.rit.edu/",
-        "icon": "material:directions-car"
+        "name": "Account Self-Service",
+        "href": "https://account.csh.rit.edu/",
+        "icon": "material:settings"
       },
       {
         "name": "Slate",
@@ -167,9 +162,14 @@
         "icon": "fa:calendar-check-o"
       },
       {
-        "name": "LetMeIn",
-        "href": "https://letmein.csh.rit.edu",
-        "icon": "material:notifications"
+        "name": "External Accounts Connector",
+        "href": "https://eac.csh.rit.edu",
+        "icon": "material:extension"
+      },
+      {
+        "name": "User Machines",
+        "href": "https://wiki.csh.rit.edu/wiki/User_services_machine",
+        "icon": "material:computer"
       },
       {
         "name": "Bucket",
@@ -177,20 +177,30 @@
         "icon": "material:folder-special"
       },
       {
-        "name": "External Accounts Connector",
-        "href": "https://eac.csh.rit.edu",
-        "icon": "material:extension"
+        "name": "Mailing Lists",
+        "href": "https://lists.csh.rit.edu",
+        "icon": "material:mail"
       },
       {
-	"name": "Resumes",
-	"href": "https://resumes.csh.rit.edu",
-	"icon": "fa:file-text"
+        "name": "Webcomics",
+        "href": "https://c-yank.csh.rit.edu",
+        "icon": "material:view-compact"
+      },
+      {
+        "name": "Ballots",
+        "href": "https://ballots.csh.rit.edu",
+        "icon": "material:content-paste"
       }
     ]
   },
   {
     "name": "CSH On The Web",
     "links": [
+      {
+        "name": "GitHub",
+        "href": "https://github.com/ComputerScienceHouse",
+        "icon": "icomoon:github"
+      },
       {
         "name": "Facebook",
         "dropdown": [
@@ -227,11 +237,6 @@
         "name": "LinkedIn",
         "href": "https://www.linkedin.com/groups/971/",
         "icon": "brandico:linkedin"
-      },
-      {
-        "name": "GitHub",
-        "href": "https://github.com/ComputerScienceHouse",
-        "icon": "icomoon:github"
       }
     ]
   },
