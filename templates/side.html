@@ -2,7 +2,7 @@
   <h5 class="card-header bg-primary text-white">Meeting Times</h5>
   <div class="card-body">
     <div class="row">
-      <div class="col-md-12 col-sm-4 col-4" data-ng-repeat="meeting in meetings">
+      <div class="col-md-12 col-sm-4 col-4" data-ng-repeat="meeting in meetings | sortDate">
         <div class="row">
           <div class="col-md-6 col-sm-6 col-12">
             <p><strong>{{ meeting.name }}</strong></p>
@@ -22,4 +22,9 @@
   <div class="card-body">
     <a href="https://plug.csh.rit.edu"><img src="https://plug.csh.rit.edu/vert" style="width: 100%"></a>
   </div>
+</div>
+<!-- Weird Clock -->
+<div class="card mb-3 h-25">
+  <h5 class="card-header bg-primary text-white">Weird Clock</h5>
+    <iframe class="card mb-3 h-100" src="https://weird-clock.csh.rit.edu/"></iframe>
 </div>

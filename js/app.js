@@ -7,6 +7,44 @@ app.directive("navbar", function() {
   }
 });
 
+app.filter("sortDate", function(){
+  return function(obj) {
+    const items = [];
+    const result = [];
+    const today = new Date().getDay()
+    const days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"]
+    angular.forEach(obj, function(val, key) {
+      let relative = days.indexOf(val.day) - today % 7
+      if (relative < 0) {
+        relative = relative + 5 + today
+      }
+      val.relaDay = relative // day relative to today for sorting
+      items.push(val);
+
+    });
+
+    items.sort(function(a,b){
+      console.log(a.name + " " + a.day + " " + a.relaDay.toString())
+      if (a.relaDay === b.relaDay) {
+        if (a.time < b.time) {
+          return -1
+        } else {
+          return 1
+        }
+      }
+
+      if (a.relaDay < b.relaDay) {
+        return -1
+      } else {
+        return 1
+      }
+
+      return 0
+    })
+    return items;
+  };
+});
+
 app.directive("side", function() {
   return {
     restrict: "E",
@@ -71,7 +109,7 @@ app.controller("MembersController", ['$scope', '$http', function($scope, $http) 
   $scope.name = "";
   $scope.profile = "";
   var imgStr = "https://profiles.csh.rit.edu/image/"
-  $http.get("https://members.csh.rit.edu/sso/redirect?info=json").success(function (response) {
+  $http.get("/sso/redirect?info=json").success(function (response) {
     $scope.profile = imgStr.concat(response.id_token.preferred_username);
     $scope.name = response.id_token.preferred_username;//response.userinfo.given_name + " " + response.userinfo.family_name;
   }).error(function (error) { 
