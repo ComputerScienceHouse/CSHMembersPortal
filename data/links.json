@@ -152,9 +152,9 @@
         "popular": true
       },
       {
-        "name": "Ballots",
-        "href": "https://ballots.csh.rit.edu",
-        "icon": "material:content-paste"
+        "name": "Password Vault",
+        "href": "https://vault.csh.rit.edu",
+        "icon": "material:encrypted"
       },
       {
         "name": "Theme Switcher",
