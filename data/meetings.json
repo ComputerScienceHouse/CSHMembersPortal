@@ -6,72 +6,67 @@
   },
   {
     "name": "R&D",
-    "day": "WED",
+    "day": "THU",
     "time": "8:00"
   },
   {
     "name": "Financial",
-    "day": "TUE",
-    "time": "8:00"
+    "day": "WED",
+    "time": "7:30"
   },
   {
     "name": "Eboard",
-    "day": "THU",
-    "time": "7:00"
+    "day": "WED",
+    "time": "8:00"
   },
   {
     "name": "OpComm",
-    "day": "MON",
-    "time": "6:30"
+    "day": "TUE",
+    "time": "6:00"
   },
   {
     "name": "PR",
-    "day": "WED",
-    "time": "6:00"
+    "day": "MON",
+    "time": "6:30"
   },
   {
     "name": "IMPS",
     "day": "MON",
-    "time": "8:00"
+    "time": "7:30"
   },
   {
     "name": "Evals",
-    "day": "TUE",
-    "time": "8:00"
+    "day": "WED",
+    "time": "6:30"
   },
   {
     "name": "History",
-    "day": "TUE",
+    "day": "THU",
     "time": "6:30"
   },
   {
     "name": "History Discussion",
-    "day": "TUE",
+    "day": "THU",
     "time": "7:00"
   },
   {
     "name": "Social",
-    "day": "FRI",
+    "day": "MON",
     "time": "7:00"
   },
   {
     "name": "Devcade",
     "day": "TUE",
-    "time": "9:00"
-  },
-  {
-    "name": "3DA",
-    "day": "MON",
-    "time": "6:00"
-  },
-  {
-    "name": "CSHacks",
-    "day": "THU",
-    "time": "5:30"
+    "time": "8:30"
   },
   {
     "name": "Bits 'n Bytes",
-    "day": "WED",
-    "time": "9:00"
+    "day": "MON",
+    "time": "8:00"
+  },
+  {
+    "name": "Yearbook",
+    "day": "TUE",
+    "time": "7:00"
   }
 ]
