@@ -5,68 +5,73 @@
     "time": "7:15"
   },
   {
-    "name": "R&D",
-    "day": "THU",
-    "time": "8:00"
-  },
-  {
-    "name": "Financial",
-    "day": "WED",
-    "time": "7:30"
-  },
-  {
-    "name": "Eboard",
-    "day": "WED",
-    "time": "8:00"
-  },
-  {
     "name": "OpComm",
-    "day": "TUE",
-    "time": "6:00"
-  },
-  {
-    "name": "PR",
     "day": "MON",
-    "time": "6:30"
-  },
-  {
-    "name": "IMPS",
-    "day": "MON",
-    "time": "7:30"
-  },
-  {
-    "name": "Evals",
-    "day": "WED",
-    "time": "6:30"
-  },
-  {
-    "name": "History",
-    "day": "THU",
-    "time": "6:30"
-  },
-  {
-    "name": "History Discussion",
-    "day": "THU",
     "time": "7:00"
   },
   {
     "name": "Social",
     "day": "MON",
+    "time": "8:00"
+  },
+  {
+    "name": "IMPS 1",
+    "day": "TUE",
+    "time": "5:30"
+  },
+  {
+    "name": "Evals",
+    "day": "TUE",
+    "time": "6:00"
+  },
+  {
+    "name": "Financial",
+    "day": "TUE",
+    "time": "6:30"
+  },
+  {
+    "name": "History",
+    "day": "WED",
+    "time": "6:30"
+  },
+  {
+    "name": "History Discussion",
+    "day": "WED",
     "time": "7:00"
   },
   {
-    "name": "Devcade",
-    "day": "TUE",
+    "name": "Eboard",
+    "day": "WED",
+    "time": "8:15"
+  },
+  {
+    "name": "PR",
+    "day": "THU",
+    "time": "5:30"
+  },
+  {
+    "name": "R&D",
+    "day": "THU",
+    "time": "6:00"
+  },
+  {
+    "name": "IMPS 2",
+    "day": "FRI",
+    "time": "7:30"
+  },
+  {
+    "name": "Caption Glasses",
+    "day": "MON",
     "time": "8:30"
   },
   {
     "name": "Bits 'n Bytes",
-    "day": "MON",
-    "time": "8:00"
+    "day": "TUE",
+    "time": "7:30"
   },
   {
-    "name": "Yearbook",
-    "day": "TUE",
-    "time": "7:00"
+    "name": "Devcade",
+    "day": "TBD",
+    "time": "TBD"
   }
 ]
