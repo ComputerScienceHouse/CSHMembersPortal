@@ -86,7 +86,7 @@ HeaderName HEADER.html
 
     OIDCRedirectURI $HTTP_SCHEME://$SERVER_NAME/sso/redirect" >> /usr/local/apache2/conf/httpd.conf
 
-if [ $HTTP_SCHEME = "https" ]; then
+if [ "$HTTP_SCHEME" = "https" ]; then
 	echo "OIDCXForwardedHeaders X-Forwarded-Host X-Forwarded-Proto X-Forwarded-Port Forwarded" >> /usr/local/apache2/conf/httpd.conf
 fi
 
