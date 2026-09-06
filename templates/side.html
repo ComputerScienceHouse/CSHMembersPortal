@@ -1,11 +1,11 @@
-<div class="card mb-3 center">
+<div class="card mb-3 text-center">
   <h5 class="card-header bg-primary text-white">Meeting Times</h5>
   <div class="card-body">
     <div class="row">
       <div class="col-md-12 col-sm-4 col-4" data-ng-repeat="meeting in meetings | sortDate">
         <div class="row">
           <div class="col-md-6 col-sm-6 col-18 d-flex align-items-center justify-content-center">
-            <p><strong>{{ meeting.name }}</strong></p>
+            <p class="text-center"><strong>{{ meeting.name }}</strong></p>
           </div>
           <div class="col-md-6 col-sm-6 col-12">
             <p>{{ meeting.day }} {{ meeting.time }}<br>{{ meeting.beginTime }}</p>
@@ -17,7 +17,7 @@
   </div>
 </div>
 
-<div class="card mb-3 center">
+<div class="card mb-3 text-center">
   <h5 class="card-header bg-primary text-white">
     <a class="text-white" href="https://plug.csh.rit.edu">CSH Plug</a>
   </h5>

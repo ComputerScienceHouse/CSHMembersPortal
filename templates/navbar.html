@@ -1,24 +1,26 @@
 <!-- Navbar -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary justify-content-center">
   <div class="container">
-    <a class="navbar-brand" href="#">Members</a>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-      data-target="#nav-responsive">
+    <a class="navbar-brand fs-4 d-inline-flex" href="#">
+      <img src="../img/csh_logo_white.svg" />&nbsp;
+      Members
+    </a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+      data-bs-target="#nav-responsive">
       <span class="navbar-toggler-icon"></span>
     </button>
     <!-- Responsive Collapse -->
-    <div class="collapse navbar-collapse" id="nav-responsive">
+    <div class="collapse navbar-collapse justify-content-between" id="nav-responsive">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item my-auto">
           <a class="nav-link" href="https://csh.rit.edu">Public Site</a>
         </li>
 
         <li class="nav-item dropdown" data-ng-repeat="section in sections">
-          <button class="nav-link dropdown-toggle" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ section.name }}</button>
+          <button class="nav-link dropdown-toggle" id="dropdown05" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ section.name }}</button>
           <div class="dropdown-menu" aria-labelledby="dropdown05">
-            <a class="dropdown-item" data-ng-repeat="link in section.links" href="{{ link.href }}"
-              style="padding-top:0em; padding-bottom:0em;">
-              <webicon class="icon" icon="{{ link.icon}}" style="width: 2em; padding-right: 0.5em; margin: 0em;" />{{
+            <a class="dropdown-item py-0" data-ng-repeat="link in section.links" href="{{ link.href }}">
+              <webicon class="icon pr-2 mx-2 my-1" icon="{{ link.icon}}" style="width: 2em;" />{{
               link.name }}
             </a>
           </div>
@@ -28,8 +30,8 @@
       <ul class="nav navbar-nav ml-auto">
         <!-- User Dropdown -->
         <li class="nav-item navbar-user dropdown">
-          <a class="nav-link dropdown-toggle mt-2" data-toggle="dropdown" href="#" id="nav-drop" aria-expanded="false">
-            <img alt="user profile image" ng-src="{{profile}}"> {{ name }}
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-drop" aria-expanded="false">
+            <img alt="user profile image" ng-src="{{profile}}" width="36" class="rounded-circle"> {{ name }}
           </a>
           <div class="dropdown-menu" aria-labelledby="nav-drop">
             <div id="show-icons" class="checkbox dropdown-item">
@@ -42,7 +44,7 @@
         </li>
       </ul>
     </div>
-    <div id="theme-indicator" style="width: 32px; height: 32px" onClick="toggleTheme(this)">
+    <div id="theme-indicator" class="text-light" style="width: 32px; height: 32px" onClick="toggleTheme(this)">
     </div>
   </div>
 </nav>

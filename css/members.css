@@ -1,67 +1,20 @@
 body {
-  padding-top: 76px;
+  padding-top: 100px;
   padding-bottom: 20px;
 }
-button.nav-link {
-  background-color: inherit;
-  border: inherit;
-}
-.center {
-  text-align: center;
-}
-a.icon-box {
-  display: block;
-}
-a:hover{
+
+a {
+  color: var(--bs-secondary-color);
   text-decoration: none;
 }
-.icon-box > p {
-  margin-bottom: 20px;
+
+a:hover {
+  text-decoration: none;
+  color: #b0197e;
 }
+
 .icon {
   width: 48px;
   height: 48px;
   margin: 10px 0;
-}
-.popular-box {
-  padding: 5px;
-  margin: 5px 0;
-}
-.popular {
-  position: relative;
-  top: -15px;
-  padding-top: 15px;
-}
-.popular .row {
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  margin: 3px 3px 0 3px;
-  padding: 6px 0px;
-  background: #f5f5f5;
-}
-.popular .icon {
-  width: 36px;
-  height: 36px;
-}
-#show-icons {
-  position: relative;
-}
-.section-title {
-  margin: 12px 0 18px 0;
-}
-/* Decreasing panel-heading padding for mobile devices */
-.panel-heading {
-  padding: 10px;
-}
-
-a {
-  color: #727272;
-}
-
-h1 {
-  color: #B0197E ;
-}
-
-.settings-panel {
-  height: 55px;
 }
